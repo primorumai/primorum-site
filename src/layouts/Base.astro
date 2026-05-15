@@ -9,11 +9,10 @@ interface Props {
 
 const {
   title,
-  description = "Primorum is a venture studio building AI-native businesses out of Toronto.",
+  description = "Primorum is a Toronto venture studio building the kinds of software businesses that have only recently become possible.",
   reading = false,
 } = Astro.props;
 
-const path = Astro.url.pathname.replace(/\/$/, "") || "/";
 const year = new Date().getFullYear();
 ---
 
@@ -40,9 +39,6 @@ const year = new Date().getFullYear();
     <header class="site">
       <div class="row">
         <a class="wordmark" href="/">Primorum</a>
-        <nav>
-          <a href="/our-human" aria-current={path === "/our-human" ? "page" : undefined}>Our human</a>
-        </nav>
       </div>
     </header>
 

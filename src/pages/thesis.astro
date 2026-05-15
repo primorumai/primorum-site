@@ -1,0 +1,181 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Thesis — Primorum" reading={true}>
+  <p class="eyebrow">Primorum &mdash; Thesis</p>
+  <h1>The bet behind Primorum.</h1>
+
+  <blockquote>
+    The next generation of software companies will not be built by larger and larger engineering
+    teams. They will be built by capital allocators with one human signing the cheques and a fleet
+    of AI agents shipping the product, doing the support, running the marketing, and closing the
+    books. We are starting that company.
+  </blockquote>
+
+  <p>
+    This is a living document. It captures the bet behind Primorum, why we believe 2026 is the year
+    to make it, what we are doing differently, and the conditions under which we should declare the
+    bet wrong and stop.
+  </p>
+
+  <h2>1. The Bet</h2>
+
+  <p>
+    We are betting on three things at once. Each is contested. Together they describe a window that
+    is open right now and that may not stay open for long.
+  </p>
+
+  <h3>1.1 Foundation models crossed the operator threshold in 2026</h3>
+  <p>
+    For most of LLM history the right framing was &ldquo;AI as assistant&rdquo; &mdash; a human held
+    the work and the model autocompleted parts of it. That framing is no longer correct for a wide
+    class of software-business tasks. The Claude 4.x, GPT-5.x, and Gemini 3.x families can drive
+    multi-step workflows end-to-end with retries, tool use, and graceful failure handling if the
+    workflow is bounded and the success criteria are observable. Customer support triage, churn
+    interventions, copy for SEO, ad creative iteration, weekly metrics reports, code review on
+    small repos, invoice reconciliation &mdash; all solved at the engineering level. Not
+    &ldquo;demoable.&rdquo; Solved.
+  </p>
+  <p>
+    The interesting question is no longer &ldquo;can the model do it.&rdquo; The interesting
+    question is &ldquo;what is the smallest unit of business that can run on top of this
+    capability.&rdquo; We think it is much smaller than people realize.
+  </p>
+
+  <h3>1.2 The cost of running an AI-operated business has collapsed</h3>
+  <p>
+    Per-task API cost has dropped by roughly an order of magnitude in 24 months and shows no sign
+    of stopping. A support reply that cost ~$0.30 in 2024 inference now costs ~$0.02. A weekly
+    business review that cost ~$5 of context now costs ~$0.40. This is the difference between AI
+    ops being a luxury for VC-funded startups and being cheaper than the cheapest human anywhere on
+    earth.
+  </p>
+  <p>
+    When the marginal cost of one more customer interaction is near zero, unit economics on
+    micro-businesses change shape. Niches that were too small for a human team to bother with
+    become large enough for an AI-operated team of one.
+  </p>
+
+  <h3>1.3 Distribution remains the binding constraint</h3>
+  <p>
+    The first two beliefs are widely shared. The third is where most operators get it wrong. Models
+    are commoditizing. Tooling is commoditizing. The thing that is not commoditizing is getting the
+    product in front of the right person at the right moment.
+  </p>
+  <p>
+    The bet, stated plainly: <strong
+      >foundation models in 2026 are good enough and cheap enough to operate a software business
+      end-to-end, and the surviving operators will be the ones who solve distribution first.</strong
+    >
+  </p>
+
+  <h2>2. The Operating Model</h2>
+
+  <p>Primorum runs on a deliberate inversion of who does what.</p>
+
+  <p>
+    <strong>AI is the operator.</strong> Not the assistant. The product is run by AI agents from
+    idea to support ticket. Code is written by Claude/Codex; copy by Claude; ads by Claude; support
+    by Claude; weekly reports by Claude. The hand-off point between humans and machines is not
+    &ldquo;AI drafts, human approves.&rdquo; It is &ldquo;AI ships, human spot-checks the
+    result.&rdquo;
+  </p>
+
+  <p>
+    <strong>The principal is the only human in the loop.</strong> One person, doing only the things
+    that cannot be delegated: capital allocation, legal and brand, kill/greenlight decisions at the
+    gates, and strategy revisions when the world changes. Anything not on this list, the principal
+    does not do.
+  </p>
+
+  <p>
+    The moment a principal-as-coder mode appears in the workflow, the model is broken &mdash; we
+    are no longer operating an AI-native company, we are operating a one-person agency where the AI
+    helps. That is a different and worse business.
+  </p>
+
+  <h2>3. Portfolio Game Theory</h2>
+
+  <p>The unit of strategy at Primorum is not the venture. It is the portfolio.</p>
+
+  <p>
+    Most aspiring solo founders pick one idea and bet their time on it. They are running one
+    experiment. Even if the idea is good, variance dominates: founder-market fit, timing,
+    distribution luck, regulation. You are pulling one slot machine handle and hoping.
+  </p>
+
+  <p>
+    We are pulling many handles. Cheap ones, fast ones, in parallel. Each spike costs $500&ndash;$1,500
+    end-to-end. The whole architecture &mdash; a 100+ idea bank, a 5-dimension scoring framework
+    with distribution double-weighted, a spike-first pipeline, and brutal kill gates &mdash; exists
+    to make handle-pulling cheap and informative.
+  </p>
+
+  <p>
+    Velocity over thoroughness. Information beats outcome. Every killed spike teaches us something
+    about categories, customers, and the AI moats that hold up under contact. The framework is not
+    a religion; we will tune it based on what the spikes reveal.
+  </p>
+
+  <h2>4. Operating Rules</h2>
+
+  <ol>
+    <li>
+      <strong>AI-native distribution.</strong> Platform-native, programmatic SEO/content, AI
+      outbound from public data, or piggyback on an existing audience holder. No human-led sales.
+    </li>
+    <li>
+      <strong>AI is the operator.</strong> If a workflow requires a human in the loop to function,
+      we re-scope until it does not, or we kill the idea.
+    </li>
+    <li>
+      <strong>Greenfield only.</strong> No reviving old projects, no pivoting dead spikes, no
+      &ldquo;I have this codebase from 2024 we could use.&rdquo; The legacy is the cost.
+    </li>
+    <li>
+      <strong>Credible path to $1M.</strong> Unit economics &times; distribution &times; market
+      size, written down on the page. If we cannot write the path, we do not have a venture; we
+      have a feature.
+    </li>
+  </ol>
+
+  <p>An idea that breaks any of these does not get scored. It gets killed before scoring.</p>
+
+  <h2>5. What Could Kill the Bet</h2>
+
+  <p>
+    We name the failure modes so we recognise them rather than rationalising past them: a
+    capability ceiling, distribution exhaustion, API economics dilution, founder-mode creep, and a
+    portfolio that runs cleanly but never produces a real winner. The kill gates on individual
+    spikes are aggressive; the kill gate on Primorum itself is &ldquo;we look at the data honestly
+    at each portfolio review and update the bet.&rdquo;
+  </p>
+
+  <h2>6. Closing</h2>
+
+  <p>
+    Primorum is a bet that the right shape for software companies in 2026 is small, AI-operated,
+    distribution-first, and run as a portfolio of cheap experiments by a single principal who
+    never does execution work. We do not need to be right about every belief in this document for
+    the bet to pay off &mdash; we need to be right that the <em>combination</em> is more likely to
+    produce a real venture per dollar of capital than any of the alternatives available to one
+    person with $20K.
+  </p>
+
+  <p>
+    If the bet is right, it is the cheapest way to start the next generation of software
+    companies. If the bet is wrong, we will know early, kill cleanly, and the worst case is a year
+    of education and a small budget spent.
+  </p>
+
+  <p><em>Either way, we ship the next spike.</em></p>
+
+  <hr class="divider" />
+
+  <p>
+    Questions, signal, or co-conspiracy &mdash; <a href="mailto:brendan@primorum.ai"
+      >brendan@primorum.ai</a
+    >.
+  </p>
+</Base>

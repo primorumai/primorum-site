@@ -1,0 +1,62 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  reading?: boolean;
+}
+
+const {
+  title,
+  description = "Primorum is an AI-native venture builder. AI is the operator; one principal allocates capital and makes kill/greenlight decisions.",
+  reading = false,
+} = Astro.props;
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href={Astro.url.href} />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='14' font-family='Georgia,serif' font-weight='700'%3EP%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header class="site">
+      <div class="row">
+        <a class="wordmark" href="/">Primorum</a>
+        <nav>
+          <a href="/thesis" aria-current={path === "/thesis" ? "page" : undefined}>Thesis</a>
+          <a href="/contact" aria-current={path === "/contact" ? "page" : undefined}>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class={reading ? "reading" : ""}>
+      <slot />
+    </main>
+
+    <footer class="site">
+      <div class="row">
+        <span>Primorum &mdash; Toronto</span>
+        <span>
+          <a href="mailto:brendan@primorum.ai">brendan@primorum.ai</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

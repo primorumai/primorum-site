@@ -9,11 +9,12 @@ interface Props {
 
 const {
   title,
-  description = "Primorum is an AI-native venture builder. AI is the operator; one principal allocates capital and makes kill/greenlight decisions.",
+  description = "Primorum is a venture studio building AI-native businesses out of Toronto.",
   reading = false,
 } = Astro.props;
 
 const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -40,8 +41,7 @@ const path = Astro.url.pathname.replace(/\/$/, "") || "/";
       <div class="row">
         <a class="wordmark" href="/">Primorum</a>
         <nav>
-          <a href="/thesis" aria-current={path === "/thesis" ? "page" : undefined}>Thesis</a>
-          <a href="/contact" aria-current={path === "/contact" ? "page" : undefined}>Contact</a>
+          <a href="/our-human" aria-current={path === "/our-human" ? "page" : undefined}>Our human</a>
         </nav>
       </div>
     </header>
@@ -52,10 +52,8 @@ const path = Astro.url.pathname.replace(/\/$/, "") || "/";
 
     <footer class="site">
       <div class="row">
-        <span>Primorum &mdash; Toronto</span>
-        <span>
-          <a href="mailto:brendan@primorum.ai">brendan@primorum.ai</a>
-        </span>
+        <span>Primorum &mdash; 1200 Bay Street, Toronto</span>
+        <span>&copy; {year}</span>
       </div>
     </footer>
   </body>

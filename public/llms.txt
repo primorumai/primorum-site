@@ -1,0 +1,8 @@
+# Primorum
+> Primorum provides free AI Operations Audits for businesses — we audit your operational processes and deliver a concrete report identifying AI software you could integrate to increase revenue, reduce costs, and grow without growing headcount. Based in Toronto.
+
+## Core
+- [Free AI Operations Audit](https://primorum.ai/): Get a free audit of your business operations. We identify AI-ready processes, recommend specific tools, estimate costs and returns, and deliver an implementation roadmap — at no cost and no commitment.
+
+## Contact
+- Audit intake: audit@primorum.ai

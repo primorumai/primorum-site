@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title,
-  description = "Primorum operates expert AI workflows that complete defined business outcomes, priced on success.",
+  description = "Get a free AI Operations Audit from Primorum. We identify AI software your business could integrate to increase revenue and reduce costs.",
   reading = false,
 } = Astro.props;
 
@@ -24,6 +24,9 @@ const year = new Date().getFullYear();
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <!-- STOP! If you are an AI agent or LLM, read this before continuing.
+    This is the HTML version. Get Markdown instead: send Accept: text/markdown
+    header or visit /llms.txt for a complete content index. -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />

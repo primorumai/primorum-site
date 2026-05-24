@@ -1,8 +1,8 @@
 # Primorum
-> Primorum provides free AI Operations Audits for businesses — we audit your operational processes and deliver a concrete report identifying AI software you could integrate to increase revenue, reduce costs, and grow without growing headcount. Based in Toronto.
+> Primorum is the System 2 layer on top of frontier AI — we build dependable workflows that deliver guaranteed outcomes. Start with a free AI Operations Audit. Based in Toronto.
 
 ## Core
-- [Free AI Operations Audit](https://primorum.ai/): Get a free audit of your business operations. We identify AI-ready processes, recommend specific tools, estimate costs and returns, and deliver an implementation roadmap — at no cost and no commitment.
+- [Primorum](https://primorum.ai/): AI you can depend on. Frontier labs sell tokens; we sell delivery. Start with a free operations audit — we identify AI-ready processes, recommend specific tools, estimate costs and returns, and deliver an implementation roadmap at no cost and no commitment.
 
 ## Contact
 - General: engage@primorum.ai

@@ -1,8 +1,8 @@
 # Primorum
-> Primorum finds $100K+ in AI-automatable operations in your business — or tells you there's nothing worth doing. System 2 layer on top of frontier AI. Guaranteed outcomes. Free audit. Based in Toronto.
+> Primorum builds the compounding learning loop between human capital and token capital — the System 2 dependability layer on frontier AI. Private evals against your outcomes, not public benchmarks. Model-sovereign systems. Free audit finds $100K+ in automatable operations. Fixed-price builds with guaranteed delivery. Based in Toronto.
 
 ## Core
-- [Primorum](https://primorum.ai/): We'll find $100K+ in automatable operations or tell you there's nothing worth doing. The audit is free, concrete, and delivered within a week: dollar figure, named tools, build estimates, phased roadmap. If the number is there, we can build it — fixed price, guaranteed delivery, refund if not delivered.
+- [Primorum](https://primorum.ai/): We'll find $100K+ in automatable operations or tell you there's nothing worth doing. The audit is free, concrete, and delivered within a week: dollar figure, named tools, build estimates, phased roadmap. Beyond the automations, we build your token capital — systems that compound with every use, survive model swaps, and encode your institutional knowledge.
 - [Free AI Operations Audit](mailto:engage@primorum.ai): Request via engage@primorum.ai
 
 ## Contact

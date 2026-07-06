@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://primorum.ai',
   trailingSlash: 'never',
   build: {
-    format: 'directory',
+    format: 'file',
   },
   integrations: [
     sitemap({

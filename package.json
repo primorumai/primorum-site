@@ -7,10 +7,12 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "postbuild": "node -e \"require('node:fs').copyFileSync('dist/sitemap-index.xml','dist/sitemap.xml')\"",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^5.0.0"
   },
   "devDependencies": {

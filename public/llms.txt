@@ -5,5 +5,8 @@
 - [Primorum](https://primorum.ai/): We'll find $100K+ in automatable operations or tell you there's nothing worth doing. The audit is free, concrete, and delivered within a week: dollar figure, named tools, build estimates, phased roadmap. Beyond the automations, we build your token capital — systems that compound with every use, survive model swaps, and encode your institutional knowledge.
 - [Free AI Operations Audit](mailto:engage@primorum.ai): Request via engage@primorum.ai
 
+## Skills Directory
+- [Agent Skills Directory](https://primorum.ai/skills): Curated directory of the best agent skills for Claude Code, Codex, Cursor, and compatible AI coding agents — official vendor skills (Anthropic, Vercel, Cloudflare, Hugging Face, Expo), battle-tested development workflow libraries, and the curated lists worth knowing. Every entry links to its GitHub source.
+
 ## Contact
 - General: engage@primorum.ai

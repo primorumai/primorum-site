@@ -7,9 +7,16 @@
     "official": true,
     "category": "Official",
     "stars": 158400,
-    "tags": ["official", "spec", "template", "documents", "claude-code"],
+    "tags": [
+      "official",
+      "spec",
+      "template",
+      "documents",
+      "claude-code"
+    ],
     "summary": "Anthropic's official skills repository — the canonical starting point.",
-    "description": "The official Anthropic repository for Agent Skills. Contains the SKILL.md specification, a starter template, and production skills including the document skills (docx, pdf, pptx, xlsx) that power Claude's file capabilities. Registerable as a Claude Code plugin marketplace with a single command. If you read one skills repo, read this one — it defines the format everything else follows."
+    "description": "The official Anthropic repository for Agent Skills. Contains the SKILL.md specification, a starter template, and production skills including the document skills (docx, pdf, pptx, xlsx) that power Claude's file capabilities. Registerable as a Claude Code plugin marketplace with a single command. If you read one skills repo, read this one — it defines the format everything else follows.",
+    "installKind": "marketplace"
   },
   {
     "slug": "claude-plugins-official",
@@ -19,9 +26,15 @@
     "official": true,
     "category": "Official",
     "stars": 31600,
-    "tags": ["official", "plugins", "marketplace", "curated"],
+    "tags": [
+      "official",
+      "plugins",
+      "marketplace",
+      "curated"
+    ],
     "summary": "Anthropic's curated, quality-gated plugin directory for Claude Code.",
-    "description": "Anthropic's managed directory of high-quality Claude Code plugins — internal plugins built by Anthropic plus vetted third-party submissions. Plugins bundle skills, slash commands, agents, and MCP servers. External submissions pass a quality and security review before inclusion, making this the safest source for plugins you haven't audited yourself."
+    "description": "Anthropic's managed directory of high-quality Claude Code plugins — internal plugins built by Anthropic plus vetted third-party submissions. Plugins bundle skills, slash commands, agents, and MCP servers. External submissions pass a quality and security review before inclusion, making this the safest source for plugins you haven't audited yourself.",
+    "installKind": "marketplace"
   },
   {
     "slug": "vercel-agent-skills",
@@ -31,9 +44,15 @@
     "official": true,
     "category": "Official",
     "stars": 28700,
-    "tags": ["official", "vercel", "nextjs", "deployment"],
+    "tags": [
+      "official",
+      "vercel",
+      "nextjs",
+      "deployment"
+    ],
     "summary": "Vercel's official skills for building and deploying on their platform.",
-    "description": "Vercel's official collection of agent skills, teaching AI agents to work with Vercel deployments, Next.js patterns, and the Vercel platform. Part of the wave of official vendor skills — the pattern where platform teams ship the knowledge agents need to use their products correctly, instead of hoping the model's training data is current."
+    "description": "Vercel's official collection of agent skills, teaching AI agents to work with Vercel deployments, Next.js patterns, and the Vercel platform. Part of the wave of official vendor skills — the pattern where platform teams ship the knowledge agents need to use their products correctly, instead of hoping the model's training data is current.",
+    "installKind": "skills"
   },
   {
     "slug": "cloudflare-skills",
@@ -43,9 +62,15 @@
     "official": true,
     "category": "Official",
     "stars": 2100,
-    "tags": ["official", "cloudflare", "workers", "infrastructure"],
+    "tags": [
+      "official",
+      "cloudflare",
+      "workers",
+      "infrastructure"
+    ],
     "summary": "Official skills for building on Cloudflare — Workers, Pages, R2, D1.",
-    "description": "Cloudflare's official skills teaching agents how to build on the Cloudflare developer platform: Workers, Pages, R2, D1, KV, and the rest of the edge stack. Written by the platform team, so the patterns reflect current APIs rather than stale training data."
+    "description": "Cloudflare's official skills teaching agents how to build on the Cloudflare developer platform: Workers, Pages, R2, D1, KV, and the rest of the edge stack. Written by the platform team, so the patterns reflect current APIs rather than stale training data.",
+    "installKind": "skills"
   },
   {
     "slug": "expo-skills",
@@ -55,9 +80,15 @@
     "official": true,
     "category": "Official",
     "stars": 2200,
-    "tags": ["official", "expo", "react-native", "mobile"],
+    "tags": [
+      "official",
+      "expo",
+      "react-native",
+      "mobile"
+    ],
     "summary": "Official skills for Expo and React Native mobile development.",
-    "description": "Expo's official collection of agent skills for working with Expo projects and Expo Application Services (EAS). Covers project configuration, builds, submissions, and updates — the workflows where mobile tooling knowledge goes stale fastest and official skills earn their keep."
+    "description": "Expo's official collection of agent skills for working with Expo projects and Expo Application Services (EAS). Covers project configuration, builds, submissions, and updates — the workflows where mobile tooling knowledge goes stale fastest and official skills earn their keep.",
+    "installKind": "skills"
   },
   {
     "slug": "huggingface-skills",
@@ -67,9 +98,16 @@
     "official": true,
     "category": "Official",
     "stars": 10800,
-    "tags": ["official", "huggingface", "ml", "models", "datasets"],
+    "tags": [
+      "official",
+      "huggingface",
+      "ml",
+      "models",
+      "datasets"
+    ],
     "summary": "Give agents the power of the Hugging Face ecosystem.",
-    "description": "Official Hugging Face skills connecting agents to the HF ecosystem: model search and download, dataset operations, Spaces, and inference. The fastest way to give a coding agent working knowledge of the largest open ML model hub."
+    "description": "Official Hugging Face skills connecting agents to the HF ecosystem: model search and download, dataset operations, Spaces, and inference. The fastest way to give a coding agent working knowledge of the largest open ML model hub.",
+    "installKind": "skills"
   },
   {
     "slug": "superpowers",
@@ -79,9 +117,16 @@
     "official": false,
     "category": "Development Workflows",
     "stars": 246900,
-    "tags": ["tdd", "debugging", "planning", "workflows", "methodology"],
+    "tags": [
+      "tdd",
+      "debugging",
+      "planning",
+      "workflows",
+      "methodology"
+    ],
     "summary": "The most-starred skills framework — battle-tested development methodology as skills.",
-    "description": "An agentic skills framework and software development methodology, and the most-starred skills collection on GitHub. Includes the widely-adopted test-driven-development (RED-GREEN-REFACTOR enforcement), systematic-debugging (4-phase root cause analysis), writing-plans, and executing-plans skills. Many of these have been vendored into countless other repos — this is the upstream."
+    "description": "An agentic skills framework and software development methodology, and the most-starred skills collection on GitHub. Includes the widely-adopted test-driven-development (RED-GREEN-REFACTOR enforcement), systematic-debugging (4-phase root cause analysis), writing-plans, and executing-plans skills. Many of these have been vendored into countless other repos — this is the upstream.",
+    "installKind": "marketplace"
   },
   {
     "slug": "matt-pocock-skills",
@@ -91,9 +136,15 @@
     "official": false,
     "category": "Development Workflows",
     "stars": 157500,
-    "tags": ["typescript", "engineering", "workflows", "opinionated"],
+    "tags": [
+      "typescript",
+      "engineering",
+      "workflows",
+      "opinionated"
+    ],
     "summary": "Matt Pocock's personal skills, straight from his .claude directory.",
-    "description": "Skills from Matt Pocock (of Total TypeScript), published directly from his working .claude directory. Opinionated, minimal, and genuinely used daily by their author — the opposite of bulk-generated skill spam. A good study in how an experienced engineer actually structures agent instructions."
+    "description": "Skills from Matt Pocock (of Total TypeScript), published directly from his working .claude directory. Opinionated, minimal, and genuinely used daily by their author — the opposite of bulk-generated skill spam. A good study in how an experienced engineer actually structures agent instructions.",
+    "installKind": "skills"
   },
   {
     "slug": "wshobson-agents",
@@ -103,9 +154,15 @@
     "official": false,
     "category": "Development Workflows",
     "stars": 37500,
-    "tags": ["agents", "marketplace", "multi-tool", "orchestration"],
+    "tags": [
+      "agents",
+      "marketplace",
+      "multi-tool",
+      "orchestration"
+    ],
     "summary": "Multi-harness agentic plugin marketplace spanning six coding agents.",
-    "description": "A plugin marketplace of agents and skills that works across Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI. Notable for treating the agent harness as an abstraction layer — write once, run in whichever coding agent you use. Includes specialized subagent definitions referenced by many downstream collections."
+    "description": "A plugin marketplace of agents and skills that works across Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI. Notable for treating the agent harness as an abstraction layer — write once, run in whichever coding agent you use. Includes specialized subagent definitions referenced by many downstream collections.",
+    "installKind": "marketplace"
   },
   {
     "slug": "jeffallan-claude-skills",
@@ -115,9 +172,16 @@
     "official": false,
     "category": "Development Workflows",
     "stars": 10400,
-    "tags": ["fullstack", "react", "python", "devops", "frameworks"],
+    "tags": [
+      "fullstack",
+      "react",
+      "python",
+      "devops",
+      "frameworks"
+    ],
     "summary": "66 specialized skills covering 30+ frameworks with progressive disclosure.",
-    "description": "66 specialized skills for full-stack development covering React, NestJS, Python, DevOps, and over 30 frameworks. Uses progressive disclosure — lean SKILL.md entry points that pull in deeper reference material only when needed, which keeps context costs down. One of the more thoughtfully engineered large collections."
+    "description": "66 specialized skills for full-stack development covering React, NestJS, Python, DevOps, and over 30 frameworks. Uses progressive disclosure — lean SKILL.md entry points that pull in deeper reference material only when needed, which keeps context costs down. One of the more thoughtfully engineered large collections.",
+    "installKind": "skills"
   },
   {
     "slug": "alirezarezvani-claude-skills",
@@ -127,9 +191,16 @@
     "official": false,
     "category": "Business & Operations",
     "stars": 20600,
-    "tags": ["business", "marketing", "compliance", "c-level", "multi-tool"],
+    "tags": [
+      "business",
+      "marketing",
+      "compliance",
+      "c-level",
+      "multi-tool"
+    ],
     "summary": "330+ skills spanning engineering, marketing, compliance, and C-level advisory.",
-    "description": "One of the broadest skill libraries: 330+ skills, 30+ agents, and 70+ commands covering engineering, DevOps, marketing (including answer-engine optimization), security, compliance, founder-mode C-suite advisory personas, and academic research workflows. Works across 13 coding agents with stdlib-only Python tooling — no pip installs. Where most collections go deep on code, this one goes wide across business functions."
+    "description": "One of the broadest skill libraries: 330+ skills, 30+ agents, and 70+ commands covering engineering, DevOps, marketing (including answer-engine optimization), security, compliance, founder-mode C-suite advisory personas, and academic research workflows. Works across 13 coding agents with stdlib-only Python tooling — no pip installs. Where most collections go deep on code, this one goes wide across business functions.",
+    "installKind": "marketplace"
   },
   {
     "slug": "humanizer",
@@ -139,9 +210,15 @@
     "official": false,
     "category": "Writing",
     "stars": 27600,
-    "tags": ["writing", "editing", "ai-detection", "voice"],
+    "tags": [
+      "writing",
+      "editing",
+      "ai-detection",
+      "voice"
+    ],
     "summary": "Strips the tells of AI-generated writing from text.",
-    "description": "A single-purpose skill that removes signs of AI-generated writing — the em-dash addiction, the 'delve' vocabulary, the hedging, the bullet-point compulsion. Proof that a skill doesn't need to be a framework: one focused job, done well, 27k+ stars. Widely vendored into other collections."
+    "description": "A single-purpose skill that removes signs of AI-generated writing — the em-dash addiction, the 'delve' vocabulary, the hedging, the bullet-point compulsion. Proof that a skill doesn't need to be a framework: one focused job, done well, 27k+ stars. Widely vendored into other collections.",
+    "installKind": "skills"
   },
   {
     "slug": "voltagent-awesome-agent-skills",
@@ -151,9 +228,15 @@
     "official": false,
     "category": "Directories",
     "stars": 27400,
-    "tags": ["awesome-list", "curated", "directory", "official-skills"],
+    "tags": [
+      "awesome-list",
+      "curated",
+      "directory",
+      "official-skills"
+    ],
     "summary": "1,000+ hand-picked skills from official dev teams and the community.",
-    "description": "The largest curated skills directory: 1,000+ agent skills from official teams (Anthropic, Google Labs, Vercel, Stripe, Cloudflare, Netlify, Trail of Bits, Sentry, Expo, Hugging Face, Figma) plus community picks. Explicitly hand-picked rather than bulk-generated, with 100 contributors and a companion site at officialskills.sh. The best single place to survey what official vendor skills exist."
+    "description": "The largest curated skills directory: 1,000+ agent skills from official teams (Anthropic, Google Labs, Vercel, Stripe, Cloudflare, Netlify, Trail of Bits, Sentry, Expo, Hugging Face, Figma) plus community picks. Explicitly hand-picked rather than bulk-generated, with 100 contributors and a companion site at officialskills.sh. The best single place to survey what official vendor skills exist.",
+    "installKind": "list"
   },
   {
     "slug": "awesome-claude-code",
@@ -163,9 +246,16 @@
     "official": false,
     "category": "Directories",
     "stars": 48400,
-    "tags": ["awesome-list", "claude-code", "plugins", "commands", "hooks"],
+    "tags": [
+      "awesome-list",
+      "claude-code",
+      "plugins",
+      "commands",
+      "hooks"
+    ],
     "summary": "The definitive awesome-list for the whole Claude Code ecosystem.",
-    "description": "A hand-picked collection covering the full Claude Code ecosystem — skills, plugins, slash commands, hooks, status lines, subagents, and developer tooling. Broader than a pure skills directory, with an emphasis on code quality, security, and originality in what gets listed. The right entry point if you want the ecosystem map, not just skills."
+    "description": "A hand-picked collection covering the full Claude Code ecosystem — skills, plugins, slash commands, hooks, status lines, subagents, and developer tooling. Broader than a pure skills directory, with an emphasis on code quality, security, and originality in what gets listed. The right entry point if you want the ecosystem map, not just skills.",
+    "installKind": "list"
   },
   {
     "slug": "composio-awesome-claude-skills",
@@ -175,9 +265,15 @@
     "official": false,
     "category": "Directories",
     "stars": 66900,
-    "tags": ["awesome-list", "integrations", "saas", "directory"],
+    "tags": [
+      "awesome-list",
+      "integrations",
+      "saas",
+      "directory"
+    ],
     "summary": "Curated skills list plus 78 SaaS integrations from Composio.",
-    "description": "Composio's curated list of Claude Skills and tools, distinguished by bundling 78 SaaS integration skills (CRM, DevOps, communication, analytics platforms) alongside community picks. Useful when the capability you need is 'talk to an external product' rather than 'follow a workflow'."
+    "description": "Composio's curated list of Claude Skills and tools, distinguished by bundling 78 SaaS integration skills (CRM, DevOps, communication, analytics platforms) alongside community picks. Useful when the capability you need is 'talk to an external product' rather than 'follow a workflow'.",
+    "installKind": "list"
   },
   {
     "slug": "karanb192-awesome-claude-skills",
@@ -187,8 +283,14 @@
     "official": false,
     "category": "Directories",
     "stars": 420,
-    "tags": ["awesome-list", "verified", "curated", "directory"],
+    "tags": [
+      "awesome-list",
+      "verified",
+      "curated",
+      "directory"
+    ],
     "summary": "50+ skills, each verified to work before listing.",
-    "description": "A smaller directory with a differentiating rule: every listed skill is verified working before inclusion. 50+ skills across testing, debugging, git workflows, and document processing, with clear use-case notes. When you'd rather have 50 skills that work than 1,000 that might, start here."
+    "description": "A smaller directory with a differentiating rule: every listed skill is verified working before inclusion. 50+ skills across testing, debugging, git workflows, and document processing, with clear use-case notes. When you'd rather have 50 skills that work than 1,000 that might, start here.",
+    "installKind": "list"
   }
 ]

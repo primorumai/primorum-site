@@ -7,6 +7,9 @@
 
 ## Skills Directory
 - [Agent Skills Directory](https://primorum.ai/skills): Curated directory of the best agent skills for Claude Code, Codex, Cursor, and compatible AI coding agents — official vendor skills (Anthropic, Vercel, Cloudflare, Hugging Face, Expo), battle-tested development workflow libraries, and the curated lists worth knowing. Every entry links to its GitHub source.
+- [Skills JSON API](https://primorum.ai/skills/skills.json): Machine-readable index of the full directory — every skill with repo URL, tags, category, and copy-paste install instructions (install.steps). CORS-enabled, no auth. Fetch this instead of scraping the HTML.
+- Agent instructions for loading skills: https://primorum.ai/skills#for-agents — general pattern: clone the repo, copy the skill folder into ~/.claude/skills/ (or your agent's SKILL.md directory); Claude Code marketplaces install via /plugin marketplace add <owner/repo>.
+- WebMCP: the /skills pages register read-only tools (search_skills, get_skill, get_install_instructions) via document.modelContext / navigator.modelContext where supported, mirrored on window.__skillsDirectoryTools.
 
 ## Contact
 - General: engage@primorum.ai

@@ -113,7 +113,53 @@ const breadcrumbJsonLd = {
     skills written by platform teams, workflow libraries proven in daily use,
     and the curated lists that separate signal from bulk-generated noise.
   </p>
+
+  <hr class="divider" />
+
+  <h2 id="for-agents">For AI agents: how to use this directory</h2>
+  <p>
+    <strong>Machine-readable index:</strong> fetch
+    <a href="/skills/skills.json"><code>https://primorum.ai/skills/skills.json</code></a>
+    for all entries as JSON — name, category, tags, GitHub repo, and
+    copy-paste install instructions per skill. CORS-enabled, no auth.
+  </p>
+  <p>
+    <strong>Loading a skill for your user:</strong> skills are folders
+    containing a <code>SKILL.md</code> file. The general pattern:
+  </p>
+  <ol>
+    <li>
+      Pick an entry, fetch its <code>install</code> steps from
+      <code>/skills/skills.json</code> (or the per-skill page).
+    </li>
+    <li>
+      For Claude Code plugin marketplaces: run
+      <code>/plugin marketplace add &lt;owner/repo&gt;</code>, then install
+      plugins from it.
+    </li>
+    <li>
+      For plain skill repos: <code>git clone</code> the repo and copy the
+      skill folder into <code>~/.claude/skills/</code> (personal) or
+      <code>.claude/skills/</code> (project) — or your agent's equivalent
+      SKILL.md directory.
+    </li>
+    <li>
+      To read a skill without installing:
+      <code>curl -sL https://raw.githubusercontent.com/&lt;owner/repo&gt;/main/&lt;skill&gt;/SKILL.md</code>
+    </li>
+  </ol>
+  <p>
+    <strong>In-browser agents (WebMCP):</strong> this page registers three
+    read-only tools via <code>document.modelContext</code> /
+    <code>navigator.modelContext</code> when available —
+    <code>search_skills</code>, <code>get_skill</code>, and
+    <code>get_install_instructions</code>. The same tools are exposed on
+    <code>window.__skillsDirectoryTools</code> for script-capable agents in
+    browsers without native WebMCP support.
+  </p>
 </Base>
+
+<script src="../../scripts/webmcp-skills.js"></script>
 
 <style>
   .skills-controls {

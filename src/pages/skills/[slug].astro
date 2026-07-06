@@ -1,12 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
 import skills from "../../data/skills.json";
+import { installInstructions } from "../../lib/install.js";
 
 export function getStaticPaths() {
   return skills.map((s) => ({ params: { slug: s.slug }, props: { skill: s } }));
 }
 
 const { skill } = Astro.props;
+const install = installInstructions(skill);
 
 const title = `${skill.name} — Agent Skill${skill.official ? " (Official)" : ""} | Primorum Skills Directory`;
 const description = `${skill.summary} By ${skill.author}. ${skill.category} skill for Claude Code and compatible AI agents — source on GitHub.`;
@@ -73,10 +75,25 @@ const fmtStars = (n) =>
 
   <p class="cta-block">
     <a class="cta" href={skill.repo} target="_blank" rel="noopener">View on GitHub</a>
-    <span class="cta-note">
-      Install per the repo's instructions — most skills drop into
-      <code>~/.claude/skills/</code> or install as a Claude Code plugin.
-    </span>
+  </p>
+
+  <h2 id="install">How to load this skill</h2>
+  <p>{install.note}</p>
+  <ol class="install-steps">
+    {
+      install.steps.map((st) => (
+        <li>
+          <span class="install-label mono">{st.label}</span>
+          <pre class="install-cmd"><code>{st.command}</code></pre>
+        </li>
+      ))
+    }
+  </ol>
+  <p class="cta-note">
+    For AI agents: this entry is also available as JSON at
+    <a href="/skills/skills.json"><code>/skills/skills.json</code></a> — the
+    <code>install.steps</code> field contains these commands. See the
+    <a href="/skills#for-agents">agent instructions</a> on the directory index.
   </p>
 
   {
@@ -112,4 +129,30 @@ const fmtStars = (n) =>
   .back-link {
     margin-top: 3rem;
   }
+  .install-steps {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1.5rem;
+  }
+  .install-steps li {
+    border-top: 1px solid var(--rule);
+    padding: 1rem 0;
+  }
+  .install-label {
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  .install-cmd {
+    margin: 0;
+    padding: 0.6rem 0.8rem;
+    background: rgba(0, 0, 0, 0.045);
+    overflow-x: auto;
+    font-size: 0.82rem;
+  }
+  .install-cmd code {
+    font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
 </style>
+
+<script src="../../scripts/webmcp-skills.js"></script>

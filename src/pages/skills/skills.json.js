@@ -1,5 +1,5 @@
 import skills from "../../data/skills.json";
-import { installInstructions } from "../../lib/install.js";
+import { installInstructions, installPrompt } from "../../lib/install.js";
 
 export function GET() {
   const payload = {
@@ -25,6 +25,7 @@ export function GET() {
         repo: s.repo,
         detailPage: `https://primorum.ai/skills/${s.slug}`,
         install: installInstructions(s),
+        installPrompt: installPrompt(s),
       })),
   };
   return new Response(JSON.stringify(payload, null, 2), {

@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import skills from "../../data/skills.json";
-import { installInstructions } from "../../lib/install.js";
+import { installInstructions, installPrompt } from "../../lib/install.js";
 
 export function getStaticPaths() {
   return skills.map((s) => ({ params: { slug: s.slug }, props: { skill: s } }));
@@ -9,6 +9,7 @@ export function getStaticPaths() {
 
 const { skill } = Astro.props;
 const install = installInstructions(skill);
+const prompt = installPrompt(skill);
 
 const title = `${skill.name} — Agent Skill${skill.official ? " (Official)" : ""} | Primorum Skills Directory`;
 const description = `${skill.summary} By ${skill.author}. ${skill.category} skill for Claude Code and compatible AI agents — source on GitHub.`;
@@ -78,6 +79,15 @@ const fmtStars = (n) =>
   </p>
 
   <h2 id="install">How to load this skill</h2>
+
+  <div class="prompt-box">
+    <p class="install-label mono">Fastest: copy this prompt into your AI agent</p>
+    <pre class="install-prompt" id="install-prompt"><code>{prompt}</code></pre>
+    <button class="copy-prompt mono" id="copy-prompt-btn" type="button">
+      Copy install prompt
+    </button>
+  </div>
+
   <p>{install.note}</p>
   <ol class="install-steps">
     {
@@ -153,6 +163,84 @@ const fmtStars = (n) =>
   .install-cmd code {
     font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
   }
+  .prompt-box {
+    border: 1px solid var(--rule);
+    padding: 1rem 1.2rem 1.2rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+  .install-prompt {
+    margin: 0 0 0.9rem;
+    padding: 0.6rem 0.8rem;
+    background: rgba(0, 0, 0, 0.045);
+    overflow-x: auto;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    max-height: 16rem;
+    overflow-y: auto;
+  }
+  .install-prompt code {
+    font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  .copy-prompt {
+    font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.45rem 1rem;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .copy-prompt:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .copy-prompt.copied {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
 </style>
+
+<script>
+  const btn = document.getElementById("copy-prompt-btn");
+  const pre = document.getElementById("install-prompt");
+
+  function legacyCopy(text: string): boolean {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch {}
+    ta.remove();
+    return ok;
+  }
+
+  btn?.addEventListener("click", async () => {
+    const text = pre?.textContent?.trim();
+    if (!text) return;
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch {
+      ok = legacyCopy(text);
+    }
+    const prev = btn.textContent;
+    btn.textContent = ok ? "Copied — paste into your AI" : "Copy failed — select the text above";
+    btn.classList.toggle("copied", ok);
+    setTimeout(() => {
+      btn.textContent = prev;
+      btn.classList.remove("copied");
+    }, 2000);
+  });
+</script>
 
 <script src="../../scripts/webmcp-skills.js"></script>

@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import skills from "../../data/skills.json";
+import { installPrompt } from "../../lib/install.js";
 
 const sorted = [...skills].sort((a, b) => b.stars - a.stars);
 const categories = [...new Set(skills.map((s) => s.category))].sort();
@@ -90,7 +91,11 @@ const breadcrumbJsonLd = {
             <a href={s.repo} target="_blank" rel="noopener">
               GitHub &nearr;
             </a>
+            <button class="copy-prompt mono" data-slug={s.slug} type="button">
+              Copy install prompt
+            </button>
           </p>
+          <template class="install-prompt-text">{installPrompt(s)}</template>
         </li>
       ))
     }
@@ -268,6 +273,27 @@ const breadcrumbJsonLd = {
     display: flex;
     gap: 1.5rem;
     margin: 0;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .copy-prompt {
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .copy-prompt:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .copy-prompt.copied {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
   }
 </style>
 
@@ -298,6 +324,45 @@ const breadcrumbJsonLd = {
       btn.classList.add("active");
       activeCat = btn.dataset.cat || "all";
       apply();
+    });
+  }
+
+  // Copy install prompt buttons
+  function legacyCopy(text: string): boolean {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch {}
+    ta.remove();
+    return ok;
+  }
+
+  for (const btn of document.querySelectorAll<HTMLButtonElement>(".copy-prompt")) {
+    btn.addEventListener("click", async () => {
+      const card = btn.closest(".skill-card");
+      const tpl = card?.querySelector<HTMLTemplateElement>(".install-prompt-text");
+      const text = tpl?.content.textContent?.trim();
+      if (!text) return;
+      let ok = false;
+      try {
+        await navigator.clipboard.writeText(text);
+        ok = true;
+      } catch {
+        ok = legacyCopy(text);
+      }
+      const prev = btn.textContent;
+      btn.textContent = ok ? "Copied — paste into your AI" : "Copy failed";
+      btn.classList.toggle("copied", ok);
+      setTimeout(() => {
+        btn.textContent = prev;
+        btn.classList.remove("copied");
+      }, 2000);
     });
   }
 </script>

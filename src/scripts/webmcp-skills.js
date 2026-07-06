@@ -13,7 +13,7 @@
  *   use the static endpoint at /skills/skills.json instead.
  */
 import skillsData from "../data/skills.json";
-import { installInstructions } from "../lib/install.js";
+import { installInstructions, installPrompt } from "../lib/install.js";
 
 const skills = skillsData
   .slice()
@@ -92,7 +92,7 @@ const tools = [
         return {
           error: `No skill with slug '${slug}'. Use search_skills to list valid slugs.`,
         };
-      return { ...publicEntry(s), description: s.description, install: installInstructions(s) };
+      return { ...publicEntry(s), description: s.description, install: installInstructions(s), installPrompt: installPrompt(s) };
     },
   },
   {

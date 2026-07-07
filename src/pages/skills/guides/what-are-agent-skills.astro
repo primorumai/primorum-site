@@ -1,0 +1,89 @@
+---
+import Base from "../../../layouts/Base.astro";
+import individualSkills from "../../../data/individual-skills.json";
+
+const title = "What Are Agent Skills? The SKILL.md Standard Explained | Primorum";
+const description =
+  "Agent skills are folders of instructions (SKILL.md) that teach AI coding agents new workflows. What they are, how they work, the open standard behind them, and where to find good ones.";
+
+const count = individualSkills.length;
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Primorum", item: "https://primorum.ai" },
+    { "@type": "ListItem", position: 2, name: "Skills", item: "https://primorum.ai/skills" },
+    { "@type": "ListItem", position: 3, name: "What Are Agent Skills?", item: "https://primorum.ai/skills/guides/what-are-agent-skills" },
+  ],
+};
+---
+
+<Base title={title} description={description} reading={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <p class="eyebrow"><a href="/skills" class="crumb">Skills Directory</a> / Guides</p>
+  <h1>What are agent skills?</h1>
+  <p class="lede">
+    Agent skills are folders of instructions that teach an AI coding agent a
+    workflow, domain, or tool it doesn't handle well out of the box. One
+    folder, one <code>SKILL.md</code> file, loaded only when relevant.
+  </p>
+
+  <h2>The mechanism</h2>
+  <p>
+    Every skill is a directory containing a <code>SKILL.md</code>: YAML
+    frontmatter (a <code>name</code> and a <code>description</code>) followed
+    by markdown instructions. At startup the agent reads only the descriptions
+    — a line or two each. When your task matches one, the agent loads that
+    skill's full instructions and follows them. This lazy loading is the trick:
+    you can install dozens of skills and pay context cost only for the one in
+    use.
+  </p>
+
+  <h2>Why they exist</h2>
+  <p>
+    Models are capable but inconsistent. They know what TDD is, yet won't
+    reliably practice it; they can write wrangler commands, but from stale
+    training data. Skills close the gap between <em>can</em> and <em>does</em>
+    — encoding the workflow, current facts, and known pitfalls so behavior
+    stops depending on how you phrased the prompt. It's the same shift
+    companies make with human processes: from tribal knowledge to written
+    procedure.
+  </p>
+
+  <h2>The standard</h2>
+  <p>
+    Anthropic introduced the format for Claude Code in 2025 and published it
+    as an open specification at
+    <a href="https://agentskills.io" target="_blank" rel="noopener">agentskills.io</a>.
+    It's now supported (natively or with minimal adaptation) by Codex, Cursor,
+    Gemini CLI, and a growing list of agents — see
+    <a href="/skills/guides/skills-for-other-agents">skills for other agents</a>.
+    Skills are complementary to MCP servers and plugins; the taxonomy is
+    untangled in
+    <a href="/skills/guides/skills-vs-plugins-vs-mcp">skills vs plugins vs MCP</a>.
+  </p>
+
+  <h2>The ecosystem</h2>
+  <p>
+    Official vendor teams — Anthropic, Cloudflare, Vercel, Hugging Face, Expo
+    — now ship skills for their own platforms, which matters because platform
+    teams keep them current. Around them sits a community of workflow
+    libraries (like <a href="/skills/superpowers">Superpowers</a>) and curated
+    lists. Our <a href="/skills">directory</a> tracks the collections worth
+    knowing and indexes {count}+ individual skills, each with a copy-paste
+    install prompt.
+  </p>
+
+  <h2>Where to start</h2>
+  <ol>
+    <li><a href="/skills">Browse the directory</a> and pick one skill that matches a task you do weekly.</li>
+    <li><a href="/skills/guides/how-to-install-claude-code-skills">Install it</a> (or paste its install prompt into your agent).</li>
+    <li>When you notice your agent repeating a mistake no skill covers — <a href="/skills/guides/how-to-write-a-skill">write your own</a>. That's where the real compounding starts.</li>
+  </ol>
+</Base>
+
+<style>
+  .crumb { text-decoration: none; }
+</style>

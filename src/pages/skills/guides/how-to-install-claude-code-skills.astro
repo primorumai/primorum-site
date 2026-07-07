@@ -1,0 +1,146 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const title = "How to Install Claude Code Skills — from GitHub, Marketplaces, or Manually | Primorum";
+const description =
+  "Every way to install agent skills in Claude Code: plugin marketplaces, cloning from GitHub, personal vs project scope, and installing into other agents like Codex and Cursor.";
+
+const faq = [
+  {
+    q: "How do I install Claude Code skills from GitHub?",
+    a: "Clone the repository, then copy the skill folder (the one containing SKILL.md) into ~/.claude/skills/ for personal scope or .claude/skills/ inside a project for project scope. If the repo is a plugin marketplace, you can instead run /plugin marketplace add owner/repo and install through the /plugin menu.",
+  },
+  {
+    q: "How do I install a Claude Code skill globally?",
+    a: "Put it in ~/.claude/skills/ in your home directory. Skills there load in every project. Skills in a project's .claude/skills/ folder only load in that project and can be committed to git to share with your team.",
+  },
+  {
+    q: "Where does Claude Code look for skills?",
+    a: "Two places: ~/.claude/skills/ (personal, all projects) and .claude/skills/ in the current project. Each skill is a subfolder containing a SKILL.md file. Plugins installed from marketplaces can also carry skills.",
+  },
+  {
+    q: "Do I need to restart Claude Code after adding a skill?",
+    a: "Start a new session to be sure the skill registry is refreshed. The skill's frontmatter description is what the agent sees at startup, so make sure it is present and specific.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Install a Claude Code skill from GitHub",
+  step: [
+    { "@type": "HowToStep", name: "Clone the repository", text: "git clone https://github.com/owner/repo" },
+    { "@type": "HowToStep", name: "Copy the skill folder", text: "cp -r repo/skill-name ~/.claude/skills/" },
+    { "@type": "HowToStep", name: "Verify", text: "Start a new Claude Code session and ask it to list available skills." },
+  ],
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Primorum", item: "https://primorum.ai" },
+    { "@type": "ListItem", position: 2, name: "Skills", item: "https://primorum.ai/skills" },
+    { "@type": "ListItem", position: 3, name: "How to Install Skills", item: "https://primorum.ai/skills/guides/how-to-install-claude-code-skills" },
+  ],
+};
+---
+
+<Base title={title} description={description} reading={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(howToJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <p class="eyebrow"><a href="/skills" class="crumb">Skills Directory</a> / Guides</p>
+  <h1>How to install Claude Code skills</h1>
+  <p class="lede">
+    Four ways, from easiest to most manual. All of them end with a folder
+    containing a <code>SKILL.md</code> file sitting where your agent can see it.
+  </p>
+
+  <h2>0. The shortcut: let your agent do it</h2>
+  <p>
+    Every skill in our <a href="/skills">directory</a> has a
+    <strong>Copy install prompt</strong> button. Paste that prompt into Claude
+    Code (or any agent with shell access) and it performs the steps below
+    itself — clone, copy, verify. This is the fastest path and works for
+    non-Claude agents too.
+  </p>
+
+  <h2>1. Plugin marketplaces (Claude Code)</h2>
+  <pre><code>/plugin marketplace add anthropics/skills
+/plugin   # browse and install</code></pre>
+  <p>
+    Marketplaces are git repos that list installable plugins, which can bundle
+    skills. Official examples: <a href="/skills/anthropic-agent-skills">anthropics/skills</a>,
+    <a href="/skills/superpowers">Superpowers</a>,
+    <a href="/skills/claude-plugins-official">the official plugin directory</a>.
+    Plugins update through the marketplace, so this is the best option for
+    collections you want to keep current.
+  </p>
+
+  <h2>2. Clone and copy (any agent)</h2>
+  <pre><code>git clone https://github.com/obra/superpowers
+cp -r superpowers/skills/test-driven-development ~/.claude/skills/</code></pre>
+  <p>
+    Works for every skill repo, marketplace or not. You take exactly the
+    skills you want and nothing else.
+  </p>
+
+  <h2>3. Personal vs project scope</h2>
+  <ul>
+    <li><code>~/.claude/skills/</code> — <strong>personal</strong>: loads in every project on your machine ("install globally").</li>
+    <li><code>.claude/skills/</code> in a repo — <strong>project</strong>: loads only there; commit it so your whole team gets the skill.</li>
+  </ul>
+  <p>
+    Rule of thumb: personal for your workflow preferences (TDD enforcement,
+    commit style), project for domain knowledge (this codebase's conventions).
+  </p>
+
+  <h2>4. Other agents (Codex, Cursor, Gemini CLI…)</h2>
+  <p>
+    The <code>SKILL.md</code> format is an open standard
+    (<a href="https://agentskills.io" target="_blank" rel="noopener">agentskills.io</a>).
+    Most compatible agents follow the same pattern — a skills directory of
+    folders with SKILL.md files — check your agent's docs for its path. The
+    skill content itself needs no changes.
+  </p>
+
+  <h2>Verify it loaded</h2>
+  <p>
+    Start a new session and ask: <em>"list your available skills."</em> If the
+    new skill is missing, check that the folder contains a
+    <code>SKILL.md</code> (not nested one level deeper) and that its
+    frontmatter has both <code>name</code> and <code>description</code>.
+  </p>
+
+  <h2>FAQ</h2>
+  {faq.map((f) => (
+    <>
+      <h3>{f.q}</h3>
+      <p>{f.a}</p>
+    </>
+  ))}
+
+  <hr class="divider" />
+  <p>
+    Next: <a href="/skills">browse the directory</a>, learn
+    <a href="/skills/guides/how-to-write-a-skill">how to write your own skill</a>,
+    or untangle <a href="/skills/guides/skills-vs-plugins-vs-mcp">skills vs plugins vs MCP</a>.
+  </p>
+</Base>
+
+<style>
+  .crumb { text-decoration: none; }
+  pre { padding: 0.6rem 0.8rem; background: rgba(0,0,0,0.045); overflow-x: auto; font-size: 0.82rem; }
+</style>

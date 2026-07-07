@@ -1,0 +1,100 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const title = "Agent Skills for Cursor, Codex, Gemini CLI & Other Agents — Compatibility Guide | Primorum";
+const description =
+  "The SKILL.md standard works beyond Claude Code. Where Cursor, Codex, Gemini CLI, and other agents look for skills, what transfers directly, and what doesn't.";
+
+const rows = [
+  { agent: "Claude Code", path: "~/.claude/skills/ (personal) · .claude/skills/ (project)", notes: "Native home of the format. Also supports plugins, marketplaces, slash commands." },
+  { agent: "OpenAI Codex", path: "Agent skills directory per Codex docs", notes: "Reads SKILL.md; several major collections ship Codex install scripts." },
+  { agent: "Cursor", path: "Project rules / skills directory", notes: "SKILL.md content transfers; Claude-specific frontmatter extensions are ignored." },
+  { agent: "Gemini CLI", path: "Skills directory per Gemini CLI docs", notes: "Supports the agentskills.io standard." },
+  { agent: "GitHub Copilot", path: ".github/copilot-instructions.md", notes: "No native SKILL.md support — paste the instruction body; frontmatter and dynamic features don't apply." },
+  { agent: "Others (OpenCode, Windsurf, Aider…)", path: "Varies", notes: "Multi-tool collections like wshobson/agents and alirezarezvani/claude-skills ship converters." },
+];
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Primorum", item: "https://primorum.ai" },
+    { "@type": "ListItem", position: 2, name: "Skills", item: "https://primorum.ai/skills" },
+    { "@type": "ListItem", position: 3, name: "Skills for Other Agents", item: "https://primorum.ai/skills/guides/skills-for-other-agents" },
+  ],
+};
+---
+
+<Base title={title} description={description} reading={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <p class="eyebrow"><a href="/skills" class="crumb">Skills Directory</a> / Guides</p>
+  <h1>Agent skills beyond Claude Code</h1>
+  <p class="lede">
+    <code>SKILL.md</code> is an open standard
+    (<a href="https://agentskills.io" target="_blank" rel="noopener">agentskills.io</a>),
+    not a Claude Code feature. Most of the skills in our
+    <a href="/skills">directory</a> work in Codex, Cursor, Gemini CLI, and
+    other agents with at most a different install path.
+  </p>
+
+  <h2>What transfers, what doesn't</h2>
+  <p>
+    <strong>Transfers directly:</strong> the skill itself — frontmatter
+    (name, description) plus markdown instructions, reference files, and
+    scripts. The content is agent-agnostic prose.
+  </p>
+  <p>
+    <strong>Claude Code-specific:</strong> plugins, marketplaces
+    (<code>/plugin marketplace add</code>), slash commands, and Claude-only
+    frontmatter extensions (tool restrictions, subagent hints). Other agents
+    ignore these gracefully; you just install by copying folders instead.
+  </p>
+
+  <h2>Compatibility table</h2>
+  <table>
+    <thead><tr><th>Agent</th><th>Where skills live</th><th>Notes</th></tr></thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr><td><strong>{r.agent}</strong></td><td><code>{r.path}</code></td><td>{r.notes}</td></tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2>The universal install pattern</h2>
+  <pre><code>git clone https://github.com/owner/skills-repo
+cp -r skills-repo/&lt;skill-folder&gt; &lt;your-agent's-skills-directory&gt;/</code></pre>
+  <p>
+    Every skill page in our directory includes a copy-paste install prompt
+    written to work agent-agnostically — it tells whatever agent you paste it
+    into to detect its own skills directory and install there.
+  </p>
+
+  <h2>Cross-agent collections</h2>
+  <p>
+    If you run multiple agents, start with collections that maintain
+    multi-tool support deliberately:
+    <a href="/skills/wshobson-agents">wshobson/agents</a> (6 harnesses) and
+    <a href="/skills/alirezarezvani-claude-skills">alirezarezvani/claude-skills</a>
+    (13 tools, with conversion scripts). Official vendor skills
+    (<a href="/skills/cloudflare-skills">Cloudflare</a>,
+    <a href="/skills/vercel-agent-skills">Vercel</a>,
+    <a href="/skills/huggingface-skills">Hugging Face</a>) are plain SKILL.md
+    folders and work everywhere.
+  </p>
+
+  <hr class="divider" />
+  <p>
+    New to the format? Start with
+    <a href="/skills/guides/what-are-agent-skills">what are agent skills</a>,
+    then <a href="/skills/guides/how-to-install-claude-code-skills">how to install</a>.
+  </p>
+</Base>
+
+<style>
+  .crumb { text-decoration: none; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.6rem 0.75rem 0.6rem 0; border-top: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: ui-monospace, monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  pre { padding: 0.6rem 0.8rem; background: rgba(0,0,0,0.045); overflow-x: auto; font-size: 0.82rem; }
+</style>

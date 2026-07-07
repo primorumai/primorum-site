@@ -1,0 +1,138 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const title = "Skills vs Plugins vs MCP vs Agents in Claude Code — What's the Difference? | Primorum";
+const description =
+  "A clear guide to Claude Code's four extension mechanisms: agent skills (SKILL.md), plugins, MCP servers, and subagents — what each is for, how they differ, and when to use which.";
+
+const faq = [
+  {
+    q: "What is the difference between a skill and a plugin in Claude Code?",
+    a: "A skill is a single folder with a SKILL.md instruction file that teaches the agent a workflow. A plugin is a distribution package that can bundle several skills plus slash commands, subagent definitions, and MCP server configs. Plugins are how skills are shipped; skills are what the agent actually reads.",
+  },
+  {
+    q: "What is the difference between a skill and an MCP server?",
+    a: "Skills are instructions (markdown the model reads); MCP servers are capabilities (running processes that expose tools the model can call). A skill can teach the agent to use tools well; an MCP server gives it tools it doesn't have. Skills need no infrastructure, MCP servers are code that runs.",
+  },
+  {
+    q: "What is the difference between a skill and a subagent?",
+    a: "A skill changes how the current agent behaves. A subagent is a separate agent instance with its own context window, spawned to work on a subtask. Skills add knowledge; subagents add parallelism and context isolation.",
+  },
+  {
+    q: "Do skills work outside Claude Code?",
+    a: "Yes. The SKILL.md format is an open standard (agentskills.io) supported by a growing set of agents including Codex, Cursor, Gemini CLI, and others. Plugins and slash commands are Claude Code-specific; MCP is a separate cross-vendor protocol.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Primorum", item: "https://primorum.ai" },
+    { "@type": "ListItem", position: 2, name: "Skills", item: "https://primorum.ai/skills" },
+    { "@type": "ListItem", position: 3, name: "Skills vs Plugins vs MCP", item: "https://primorum.ai/skills/guides/skills-vs-plugins-vs-mcp" },
+  ],
+};
+---
+
+<Base title={title} description={description} reading={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <p class="eyebrow"><a href="/skills" class="crumb">Skills Directory</a> / Guides</p>
+  <h1>Skills vs plugins vs MCP vs agents: what's the difference?</h1>
+  <p class="lede">
+    Claude Code has four extension mechanisms that overlap just enough to
+    confuse everyone. Here's the taxonomy in one page, with the decision rule
+    at the end.
+  </p>
+
+  <h2>The one-line versions</h2>
+  <ul>
+    <li><strong>Skill</strong> — a folder with a <code>SKILL.md</code> file: instructions the agent loads when relevant. <em>Knowledge.</em></li>
+    <li><strong>Plugin</strong> — a package that ships skills, slash commands, subagents, and/or MCP config together. <em>Distribution.</em></li>
+    <li><strong>MCP server</strong> — a running process exposing tools/data the agent can call (databases, APIs, browsers). <em>Capability.</em></li>
+    <li><strong>Subagent</strong> — a separate agent instance with its own context, spawned for a subtask. <em>Parallelism.</em></li>
+  </ul>
+
+  <h2>Skills: teach the agent something</h2>
+  <p>
+    A skill is markdown — YAML frontmatter (<code>name</code>,
+    <code>description</code>) plus instructions. The agent reads the
+    description at startup and loads the full body only when the task matches,
+    so skills are nearly free until used. They can bundle reference docs and
+    scripts, but the essence is prose: workflows, conventions, pitfalls,
+    checklists. The format is an open standard
+    (<a href="https://agentskills.io" target="_blank" rel="noopener">agentskills.io</a>)
+    that works across Claude Code, Codex, Cursor, and other agents.
+    Skills answer: <em>"the model is capable of this, but does it wrong or
+    inconsistently."</em>
+  </p>
+
+  <h2>Plugins: ship extensions</h2>
+  <p>
+    A Claude Code plugin is a directory with a
+    <code>.claude-plugin/plugin.json</code> manifest that can carry any mix of
+    skills, slash commands, agent definitions, and MCP server configs.
+    Marketplaces (like <a href="/skills/anthropic-agent-skills">anthropics/skills</a>
+    or <a href="/skills/superpowers">Superpowers</a>) are git repos listing
+    plugins, added with <code>/plugin marketplace add owner/repo</code>.
+    If skills are books, plugins are the box set and marketplaces the bookstore.
+  </p>
+
+  <h2>MCP servers: give the agent tools</h2>
+  <p>
+    The Model Context Protocol is a separate, cross-vendor standard for
+    connecting agents to running capabilities: query a database, drive a
+    browser, call your company's API. An MCP server is software that executes;
+    a skill is text that instructs. The two compose naturally — an MCP server
+    gives the agent a database connection, a skill teaches it your schema
+    conventions and which queries are safe.
+  </p>
+
+  <h2>Subagents: split the work</h2>
+  <p>
+    Subagents are separate agent instances with their own context windows,
+    used to isolate noisy subtasks (a code review, a research pass) or run
+    workstreams in parallel. A plugin can define specialized subagents with
+    their own prompts and tool restrictions. Skills change <em>how</em> one
+    agent thinks; subagents change <em>how many</em> agents are thinking.
+  </p>
+
+  <h2>The decision rule</h2>
+  <ol>
+    <li>Agent <em>does it wrong</em> → write a <strong>skill</strong>.</li>
+    <li>Agent <em>can't do it at all</em> (needs external data/actions) → <strong>MCP server</strong>.</li>
+    <li>Task <em>floods the context</em> or parallelizes → <strong>subagent</strong>.</li>
+    <li>Want to <em>share</em> any of the above → package as a <strong>plugin</strong>.</li>
+  </ol>
+
+  <h2>FAQ</h2>
+  {faq.map((f) => (
+    <>
+      <h3>{f.q}</h3>
+      <p>{f.a}</p>
+    </>
+  ))}
+
+  <hr class="divider" />
+  <p>
+    Ready to add some? Browse the <a href="/skills">skills directory</a> —
+    every entry has a copy-paste install prompt — or start with
+    <a href="/skills/guides/how-to-install-claude-code-skills">how to install skills</a>.
+  </p>
+</Base>
+
+<style>
+  .crumb { text-decoration: none; }
+</style>

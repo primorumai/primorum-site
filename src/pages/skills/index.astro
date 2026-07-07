@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import skills from "../../data/skills.json";
+import individualSkills from "../../data/individual-skills.json";
 import { installPrompt } from "../../lib/install.js";
 
 const sorted = [...skills].sort((a, b) => b.stars - a.stars);
@@ -100,6 +101,32 @@ const breadcrumbJsonLd = {
       ))
     }
   </ul>
+
+  <hr class="divider" />
+
+  <h2>Guides</h2>
+  <ul>
+    <li><a href="/skills/guides/what-are-agent-skills">What are agent skills?</a> — the SKILL.md standard explained</li>
+    <li><a href="/skills/guides/skills-vs-plugins-vs-mcp">Skills vs plugins vs MCP vs agents</a> — the taxonomy untangled</li>
+    <li><a href="/skills/guides/how-to-install-claude-code-skills">How to install Claude Code skills</a> — marketplaces, GitHub, scopes</li>
+    <li><a href="/skills/guides/how-to-write-a-skill">How to write a skill</a> — SKILL.md format, frontmatter, best practices</li>
+    <li><a href="/skills/guides/best-claude-code-skills">Best Claude Code skills</a> — verified shortlist by use case</li>
+    <li><a href="/skills/guides/skills-for-other-agents">Skills for Cursor, Codex & other agents</a> — compatibility guide</li>
+  </ul>
+
+  <h2>Individual skills</h2>
+  <p>
+    The collections above contain <strong>{individualSkills.length} individual skills</strong>, each
+    with its own page, description, and install prompt. A sample:
+    <a href="/skills/s/test-driven-development">test-driven-development</a>,
+    <a href="/skills/s/systematic-debugging">systematic-debugging</a>,
+    <a href="/skills/s/wrangler">wrangler</a>,
+    <a href="/skills/s/humanizer">humanizer</a>,
+    <a href="/skills/s/pptx">pptx</a>,
+    <a href="/skills/s/writing-plans">writing-plans</a>.
+    Agents: fetch the full index at
+    <a href="/skills/skills-index.json"><code>/skills/skills-index.json</code></a>.
+  </p>
 
   <hr class="divider" />
 

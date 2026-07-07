@@ -5,12 +5,14 @@ interface Props {
   title: string;
   description?: string;
   reading?: boolean;
+  noindex?: boolean;
 }
 
 const {
   title,
   description = "Primorum is the System 2 layer on top of frontier AI — we build dependable workflows that deliver guaranteed outcomes. Start with a free operations audit.",
   reading = false,
+  noindex = false,
 } = Astro.props;
 
 // Canonical: strip the .html suffix that build format:'file' leaves on
@@ -29,6 +31,7 @@ const year = new Date().getFullYear();
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
     <!-- STOP! If you are an AI agent or LLM, read this before continuing.
     This is the HTML version. Get Markdown instead: send Accept: text/markdown
     header or visit /llms.txt for a complete content index. -->

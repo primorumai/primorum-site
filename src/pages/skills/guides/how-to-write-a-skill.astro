@@ -1,0 +1,151 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const title = "How to Write a Claude Code Skill — SKILL.md Format, Frontmatter & Best Practices | Primorum";
+const description =
+  "The complete SKILL.md reference: frontmatter fields, file structure, progressive disclosure, a starter template, and a checklist for writing agent skills that actually get used.";
+
+const faq = [
+  {
+    q: "What is the SKILL.md format?",
+    a: "A markdown file with YAML frontmatter. The frontmatter requires two fields — name (lowercase, hyphens) and description (when to use the skill). The markdown body contains the instructions the agent follows. The skill lives in its own folder, optionally with references/, scripts/, and assets/ subfolders.",
+  },
+  {
+    q: "What goes in SKILL.md frontmatter?",
+    a: "Required: name and description. The description is the most important line in the file — the agent reads it to decide when to load the skill, so it should state both what the skill does and the trigger conditions ('Use when...').",
+  },
+  {
+    q: "What is the difference between SKILL.md and AGENTS.md?",
+    a: "AGENTS.md (and CLAUDE.md) are always-loaded project context files — conventions the agent should permanently know in a repo. SKILL.md files are on-demand: loaded only when the task matches the description. Put stable project facts in AGENTS.md; put workflows and procedures in skills.",
+  },
+  {
+    q: "How long should a skill be?",
+    a: "The body should be as short as it can be while still changing behavior — a few hundred lines is typical. Move deep reference material into references/ files that the skill tells the agent to read when needed (progressive disclosure), keeping the always-loaded surface small.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Primorum", item: "https://primorum.ai" },
+    { "@type": "ListItem", position: 2, name: "Skills", item: "https://primorum.ai/skills" },
+    { "@type": "ListItem", position: 3, name: "How to Write a Skill", item: "https://primorum.ai/skills/guides/how-to-write-a-skill" },
+  ],
+};
+
+const template = `---
+name: my-skill-name
+description: What this skill does and when to use it. Use when [trigger conditions — be specific, the agent matches tasks against this line].
+---
+
+# My Skill Name
+
+## When to use
+One paragraph on the exact situations this applies to (and when NOT to).
+
+## Steps
+1. Numbered, concrete steps with exact commands.
+2. Include expected output so the agent can verify.
+3. Branch points: "If X, do Y; otherwise Z."
+
+## Pitfalls
+- The mistakes this skill exists to prevent, stated bluntly.
+
+## Verification
+How to confirm the task actually succeeded.`;
+---
+
+<Base title={title} description={description} reading={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <p class="eyebrow"><a href="/skills" class="crumb">Skills Directory</a> / Guides</p>
+  <h1>How to write a Claude Code skill</h1>
+  <p class="lede">
+    A skill is a folder with a <code>SKILL.md</code> file. The format takes
+    five minutes to learn; writing skills that actually change agent behavior
+    takes a bit more. Both are covered here.
+  </p>
+
+  <h2>The anatomy</h2>
+  <pre><code>my-skill/
+  SKILL.md          # required: frontmatter + instructions
+  references/       # optional: deep docs, loaded on demand
+  scripts/          # optional: helper scripts the skill invokes
+  assets/           # optional: templates, examples</code></pre>
+
+  <h2>The frontmatter</h2>
+  <p>Two required fields:</p>
+  <ul>
+    <li><code>name</code> — unique identifier, lowercase with hyphens.</li>
+    <li><code>description</code> — <strong>the most important line in the file.</strong> The agent reads only this at startup and matches tasks against it. State what the skill does <em>and</em> when to use it: "…Use when reviewing Worker code, configuring wrangler.jsonc, or checking for Workers anti-patterns."</li>
+  </ul>
+  <p>
+    A weak description means the skill never loads; an over-broad one means it
+    loads constantly and wastes context. Look at how
+    <a href="/skills/s/wrangler">Cloudflare's wrangler skill</a> or
+    <a href="/skills/s/test-driven-development">Superpowers' TDD skill</a>
+    write theirs — specific triggers, explicit verbs.
+  </p>
+
+  <h2>Starter template</h2>
+  <pre><code>{template}</code></pre>
+
+  <h2>What separates good skills from filler</h2>
+  <ul>
+    <li><strong>Encode decisions, not descriptions.</strong> "Prefer JSON config over TOML; newer features are JSON-only" beats a paragraph about configuration formats.</li>
+    <li><strong>Exact commands with expected output.</strong> The agent should be able to verify each step landed.</li>
+    <li><strong>Pitfalls section.</strong> The single highest-value content: the mistakes you've already made, so the agent doesn't repeat them.</li>
+    <li><strong>Progressive disclosure.</strong> Keep SKILL.md lean; push API references and long tables into <code>references/</code> files the skill points to. The agent reads them only when needed.</li>
+    <li><strong>Bias to retrieval for volatile facts.</strong> CLI flags and API shapes go stale. The best vendor skills (Cloudflare's, for instance) tell the agent to fetch current docs rather than trusting baked-in knowledge.</li>
+  </ul>
+
+  <h2>Checklist before publishing</h2>
+  <ol>
+    <li>Description states trigger conditions ("Use when…")</li>
+    <li>Steps are numbered and copy-paste executable</li>
+    <li>Pitfalls section exists and is honest</li>
+    <li>Verification step included</li>
+    <li>Under ~500 lines; deep material moved to references/</li>
+    <li>Tested: fresh session, real task, skill actually loaded and changed the outcome</li>
+  </ol>
+
+  <p>
+    The formal spec lives at
+    <a href="https://agentskills.io" target="_blank" rel="noopener">agentskills.io</a>,
+    and Anthropic's <a href="/skills/anthropic-agent-skills">official repo</a>
+    ships a template plus production examples worth reading before your first attempt.
+  </p>
+
+  <h2>FAQ</h2>
+  {faq.map((f) => (
+    <>
+      <h3>{f.q}</h3>
+      <p>{f.a}</p>
+    </>
+  ))}
+
+  <hr class="divider" />
+  <p>
+    See how the pros do it: browse <a href="/skills">195+ real skills</a> in
+    the directory, or read
+    <a href="/skills/guides/skills-vs-plugins-vs-mcp">skills vs plugins vs MCP</a>
+    to understand where skills fit.
+  </p>
+</Base>
+
+<style>
+  .crumb { text-decoration: none; }
+  pre { padding: 0.6rem 0.8rem; background: rgba(0,0,0,0.045); overflow-x: auto; font-size: 0.82rem; }
+</style>

@@ -1,0 +1,112 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const title = "Best Claude Code Skills in 2026 — a Verified Shortlist by Use Case | Primorum";
+const description =
+  "The Claude Code skills actually worth installing, by use case: TDD, debugging, code review, documents, writing, and platform work. Hand-verified, with install prompts.";
+
+const picks = [
+  {
+    useCase: "Test-driven development",
+    slug: "test-driven-development",
+    name: "test-driven-development (Superpowers)",
+    why: "Enforces RED-GREEN-REFACTOR instead of describing it. The single most-referenced community skill, and the fastest way to feel what a good skill does.",
+  },
+  {
+    useCase: "Debugging",
+    slug: "systematic-debugging",
+    name: "systematic-debugging (Superpowers)",
+    why: "Four-phase root-cause analysis that stops the agent from patching symptoms. Pairs naturally with the TDD skill.",
+  },
+  {
+    useCase: "Writing that doesn't read like AI",
+    slug: "humanizer",
+    name: "Humanizer",
+    why: "Single-purpose: strips the em-dash addiction, hedging, and bullet-point compulsion from AI-drafted text. 27k+ stars for a reason.",
+  },
+  {
+    useCase: "Office documents",
+    slug: "docx",
+    name: "docx / pdf / pptx / xlsx (Anthropic)",
+    why: "The production skills behind Claude's own file features, source-available. If you generate Word docs, decks, or spreadsheets, these are the reference implementations.",
+  },
+  {
+    useCase: "Planning multi-step work",
+    slug: "writing-plans",
+    name: "writing-plans + executing-plans (Superpowers)",
+    why: "Makes the agent produce a reviewable plan before touching code, then execute it stepwise. The pair is the backbone of Superpowers' methodology.",
+  },
+  {
+    useCase: "Cloudflare platform work",
+    slug: "wrangler",
+    name: "wrangler + workers-best-practices (Cloudflare)",
+    why: "Official, retrieval-first (fetches current docs instead of trusting training data), and honest about how fast CLI flags go stale. The model vendor skill.",
+  },
+];
+
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Best Claude Code Skills by Use Case",
+  itemListElement: picks.map((p, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: p.name,
+    url: `https://primorum.ai/skills/s/${p.slug}`,
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Primorum", item: "https://primorum.ai" },
+    { "@type": "ListItem", position: 2, name: "Skills", item: "https://primorum.ai/skills" },
+    { "@type": "ListItem", position: 3, name: "Best Claude Code Skills", item: "https://primorum.ai/skills/guides/best-claude-code-skills" },
+  ],
+};
+---
+
+<Base title={title} description={description} reading={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <p class="eyebrow"><a href="/skills" class="crumb">Skills Directory</a> / Guides</p>
+  <h1>Best Claude Code skills, by use case</h1>
+  <p class="lede">
+    A short list, deliberately. These are the skills we'd install on a fresh
+    machine — each verified working, each linked to its source. Last reviewed
+    July 2026.
+  </p>
+
+  {picks.map((p) => (
+    <>
+      <h2>{p.useCase}</h2>
+      <p>
+        <strong><a href={`/skills/s/${p.slug}`}>{p.name}</a></strong> — {p.why}
+      </p>
+    </>
+  ))}
+
+  <hr class="divider" />
+
+  <h2>How we pick</h2>
+  <p>
+    Three filters: the skill is <em>used by its own author</em> (not
+    portfolio-ware), it <em>changes agent behavior observably</em> on a real
+    task, and its repo is <em>maintained</em>. Star counts inform but don't
+    decide — several 100k-star collections contain filler alongside gems,
+    which is why this page names individual skills, not repos.
+  </p>
+  <p>
+    Want the full landscape instead of the shortlist? The
+    <a href="/skills">directory</a> tracks every collection we rate, and every
+    entry has a copy-paste install prompt — or read
+    <a href="/skills/guides/how-to-install-claude-code-skills">how to install skills</a>
+    first.
+  </p>
+</Base>
+
+<style>
+  .crumb { text-decoration: none; }
+</style>

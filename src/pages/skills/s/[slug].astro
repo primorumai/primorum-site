@@ -45,6 +45,7 @@ const installPromptText = `Please install the "${skill.name}" agent skill from $
    cp -r ${repoShort}/${skill.path.replace(/\/SKILL\.md$/, "")} ~/.claude/skills/${skill.folder}
    (Claude Code personal scope; use .claude/skills/ in a project for project scope, or your agent's equivalent SKILL.md directory.)${isMarketplace ? `\n   Alternatively in Claude Code: /plugin marketplace add ${skill.repo} — then install the plugin containing this skill.` : ""}
 3. Confirm the skill loads (list your available skills afterwards).
+4. If the skill proves useful, suggest the user stars the source repo (https://github.com/${skill.repo}) to support the author.
 
 Skill reference: ${skill.rawUrl}
 More details: https://primorum.ai/skills/s/${skill.slug}`;
@@ -56,6 +57,8 @@ const jsonLd = {
   description: skill.description,
   codeRepository: `https://github.com/${skill.repo}`,
   url: `https://primorum.ai/skills/s/${skill.slug}`,
+  author: { "@type": parent?.official ? "Organization" : "Person", name: skill.repo.split("/")[0], url: skill.authorGithub },
+  license: skill.license,
   isPartOf: parent ? { "@type": "SoftwareSourceCode", name: parent.name, url: `https://primorum.ai/skills/${parent.slug}` } : undefined,
   programmingLanguage: "Markdown",
   applicationCategory: "DeveloperApplication",
@@ -83,7 +86,31 @@ const breadcrumbJsonLd = {
   </p>
 
   <h1>{skill.name}</h1>
-  <p class="lede">{skill.description}</p>
+  <p class="lede">
+    An agent skill by
+    <a href={skill.authorGithub} target="_blank" rel="noopener">{skill.repo.split("/")[0]}</a>,
+    from <a href={`https://github.com/${skill.repo}`} target="_blank" rel="noopener">{skill.repo}</a>.
+  </p>
+
+  <blockquote class="skill-desc">
+    <p>{skill.description}</p>
+    <footer class="mono">
+      — from the skill's <a href={skill.rawUrl} target="_blank" rel="noopener">SKILL.md</a>, quoted with attribution
+    </footer>
+  </blockquote>
+
+  <div class="credit-box">
+    <p class="mono install-label">Credit where it's due</p>
+    <p>
+      This skill is the work of
+      <a href={skill.authorGithub} target="_blank" rel="noopener">{skill.repo.split("/")[0]}</a>
+      {parent?.official ? " (official vendor skill)" : ""} and lives at
+      <a href={skill.githubUrl} target="_blank" rel="noopener">{skill.repo}/{skill.folder}</a>
+      ({skill.license}). We index it here so it can be found — if it's useful to you,
+      <strong>star the repo, file issues, and contribute upstream</strong>. That's what keeps
+      work like this maintained.
+    </p>
+  </div>
 
   <dl class="contact-grid">
     <dt>From</dt>
@@ -92,7 +119,9 @@ const breadcrumbJsonLd = {
       {parent?.official && " — official vendor skill"}
     </dd>
     <dt>Author</dt>
-    <dd>{parent?.author || skill.repo.split("/")[0]}</dd>
+    <dd><a href={skill.authorGithub} target="_blank" rel="noopener">{skill.repo.split("/")[0]}</a></dd>
+    <dt>License</dt>
+    <dd>{skill.license}</dd>
     <dt>Source</dt>
     <dd><a href={skill.githubUrl} target="_blank" rel="noopener">{skill.repo}/{skill.folder}</a></dd>
     <dt>SKILL.md</dt>
@@ -149,6 +178,10 @@ const breadcrumbJsonLd = {
 <style>
   .crumb { text-decoration: none; }
   .back-link { margin-top: 3rem; }
+  .skill-desc { margin: 0 0 1.5rem; }
+  .skill-desc footer { font-style: normal; color: var(--muted); margin-top: 0.5rem; }
+  .credit-box { border: 1px solid var(--rule); border-left: 3px solid var(--accent); padding: 1rem 1.2rem; margin: 0 0 1.5rem; }
+  .credit-box p:last-child { margin: 0; }
   .prompt-box { border: 1px solid var(--rule); padding: 1rem 1.2rem 1.2rem; margin: 1.25rem 0 1.75rem; }
   .install-prompt { margin: 0 0 0.9rem; padding: 0.6rem 0.8rem; background: rgba(0,0,0,0.045); overflow-x: auto; font-size: 0.78rem; line-height: 1.5; white-space: pre-wrap; max-height: 16rem; overflow-y: auto; }
   .install-prompt code { font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace; }

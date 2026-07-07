@@ -10,7 +10,9 @@
   "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/algorithmic-art/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "brand-guidelines",
@@ -23,7 +25,9 @@
   "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/brand-guidelines/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "canvas-design",
@@ -36,7 +40,9 @@
   "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/canvas-design/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "claude-api",
@@ -49,7 +55,9 @@
   "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/claude-api/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "doc-coauthoring",
@@ -62,7 +70,9 @@
   "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/doc-coauthoring/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "docx",
@@ -75,7 +85,9 @@
   "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/docx/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/docx",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "frontend-design",
@@ -88,7 +100,9 @@
   "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "internal-comms",
@@ -101,7 +115,9 @@
   "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/internal-comms/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/internal-comms",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "mcp-builder",
@@ -114,7 +130,9 @@
   "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/mcp-builder/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "pdf",
@@ -127,7 +145,9 @@
   "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/pdf/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/pdf",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "pptx",
@@ -140,7 +160,9 @@
   "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/pptx/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/pptx",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "skill-creator",
@@ -153,7 +175,9 @@
   "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "slack-gif-creator",
@@ -166,7 +190,9 @@
   "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/slack-gif-creator/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "theme-factory",
@@ -179,7 +205,9 @@
   "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/theme-factory/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "web-artifacts-builder",
@@ -192,7 +220,9 @@
   "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/web-artifacts-builder/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "webapp-testing",
@@ -205,7 +235,9 @@
   "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/webapp-testing/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "xlsx",
@@ -218,7 +250,9 @@
   "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
   "rawUrl": "https://raw.githubusercontent.com/anthropics/skills/main/skills/xlsx/SKILL.md",
   "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0 (document skills source-available)",
+  "authorGithub": "https://github.com/anthropics"
  },
  {
   "slug": "agents-sdk",
@@ -231,7 +265,9 @@
   "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/agents-sdk",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "cloudflare",
@@ -244,7 +280,9 @@
   "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/cloudflare",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "cloudflare-email-service",
@@ -257,7 +295,9 @@
   "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app — Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like \"add email to my Worker\" — this skill has critical config details.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare-email-service/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/cloudflare-email-service",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "cloudflare-one",
@@ -270,7 +310,9 @@
   "description": "Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity. Use when designing, configuring, troubleshooting, or reviewing Cloudflare One deployments. Retrieval-first: use current Cloudflare docs/API schemas instead of embedded product docs.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare-one/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/cloudflare-one",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "cloudflare-one-migrations",
@@ -283,7 +325,9 @@
   "description": "Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One. Use for migration assessments, policy mapping, rollout plans, and parity/gap analysis.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare-one-migrations/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/cloudflare-one-migrations",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "durable-objects",
@@ -296,7 +340,9 @@
   "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/durable-objects/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/durable-objects",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "sandbox-sdk",
@@ -309,7 +355,9 @@
   "description": "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/sandbox-sdk/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/sandbox-sdk",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "turnstile-spin",
@@ -322,7 +370,9 @@
   "description": "Set up Cloudflare Turnstile end-to-end in a project — scan the codebase, create the widget via the Cloudflare API, deploy the managed siteverify Worker, write the frontend snippets, validate, and persist the skill. Load this when a user asks to add Turnstile, set up CAPTCHA, protect a form from bots, or fix a Turnstile integration. Mirrors developers.cloudflare.com/turnstile/spin.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/turnstile-spin/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/turnstile-spin",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "web-perf",
@@ -335,7 +385,9 @@
   "description": "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (LCP, INP, CLS) and supplementary metrics (FCP, TBT, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/web-perf",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "workers-best-practices",
@@ -348,7 +400,9 @@
   "description": "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/workers-best-practices",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "wrangler",
@@ -361,7 +415,9 @@
   "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
   "rawUrl": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/wrangler/SKILL.md",
   "githubUrl": "https://github.com/cloudflare/skills/tree/main/skills/wrangler",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/cloudflare"
  },
  {
   "slug": "add-app-clip",
@@ -374,7 +430,9 @@
   "description": "Add an iOS App Clip target to an Expo app. Use when the user mentions App Clip, AASA, apple-app-site-association, appclips, smart app banner, or wants to ship a lightweight iOS Clip invoked from a URL alongside their parent app.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/add-app-clip/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/add-app-clip",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "building-native-ui",
@@ -387,7 +445,9 @@
   "description": "Build beautiful, native-feeling Expo screens. Covers Apple HIG styling, semantic colors, native controls, SF Symbols, media, animations, visual effects, gradients, storage, and responsive layout. For routing and navigation, use the expo-router skill.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/building-native-ui/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/building-native-ui",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "eas-simulator",
@@ -400,7 +460,9 @@
   "description": "Run and control a user's app on a remote iOS/Android simulator hosted on EAS cloud. Always read before executing any `eas simulator:*` commands — it has the current syntax for this experimental API. Use whenever the user needs a simulator they can't run locally — 'run my app on a cloud simulator', 'use eas simulator to run/install/screenshot my app', 'I'm on Linux/Cursor and need an iOS device', 'no sim on this box / headless CI', 'let an agent click through my app and screenshot it', 'test my dev build on a remote sim with live reload', 'stream a sim's screen to my browser' — even when they don't say 'EAS Simulator' or 'cloud'. On a host WITHOUT a local simulator (Linux, CI, cloud sandbox) it's the default — just use it; on macOS, do NOT auto-trigger for a plain 'run on the simulator' — use it only for a cloud/remote/shareable sim, an iOS version they lack, or an agent-driven session. NOT for local sims (expo run:ios, Xcode, Android Studio), EAS Build/Update, web preview, or physical devices.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/eas-simulator/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/eas-simulator",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "eas-update-insights",
@@ -413,7 +475,9 @@
   "description": "Check the health of published EAS Updates: crash rates, install/launch counts, unique users, payload size, and the split between embedded and OTA users per channel. Use when the user asks how an update is performing, whether a rollout is healthy, how many users are on the embedded build vs OTA, or wants to gate CI on update health.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/eas-update-insights/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/eas-update-insights",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-api-routes",
@@ -426,7 +490,9 @@
   "description": "Guidelines for creating API routes in Expo Router with EAS Hosting",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-api-routes/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-api-routes",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-brownfield",
@@ -439,7 +505,9 @@
   "description": "Integrate Expo and React Native into an existing native iOS or Android app. Use when the user mentions brownfield, embedding React Native in a native app, AAR/XCFramework, or adding Expo to an existing Kotlin/Swift project. Covers both the isolated approach and the integrated approach.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-brownfield/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-brownfield",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-cicd-workflows",
@@ -452,7 +520,9 @@
   "description": "Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when the user asks about CI/CD or workflows in an Expo or EAS context, mentions .eas/workflows/, or wants help with EAS build pipelines or deployment automation.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-cicd-workflows/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-cicd-workflows",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-deployment",
@@ -465,7 +535,9 @@
   "description": "Deploy Expo apps to production with EAS — build and submit to the iOS App Store, Google Play Store, and TestFlight, configure eas.json build and submit profiles, manage app versions and build numbers, publish App Store metadata and ASO, and deploy web bundles and API routes via EAS Hosting. Use whenever the user is preparing a production build, running eas build or eas submit, shipping to TestFlight, releasing or rolling out to the app stores, bumping version or build numbers, or setting up store listing metadata for an Expo app.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-deployment/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-deployment",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-dev-client",
@@ -478,7 +550,9 @@
   "description": "Build Expo app for development",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-dev-client/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-dev-client",
-  "indexable": false
+  "indexable": false,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-examples",
@@ -491,7 +565,9 @@
   "description": "Expo's official example projects — the expo/examples repo of ~70 `with-*` integrations (Stripe, Clerk, Supabase, OpenAI, maps, Reanimated, SQLite, Skia, NativeWind, and more). Use when integrating a third-party library or service into an existing Expo app and you want the canonical, version-matched pattern to adapt, or when scaffolding a new project from one with `npx create-expo --example`.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-examples/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-examples",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-module",
@@ -504,7 +580,9 @@
   "description": "Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript). Covers module definition DSL, native views, shared objects, config plugins, lifecycle hooks, autolinking, and type system. Use when building or modifying native modules for Expo.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-module/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-module",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-observe",
@@ -517,7 +595,9 @@
   "description": "Use for anything related to EAS Observe — adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive, the useObserve hook, the Expo Router / React Navigation integrations for per-route metrics, and user-defined events via `Observe.logEvent`), querying via the EAS CLI (`eas observe:metrics-summary`, `observe:metrics`, `observe:routes`, `observe:events`, `observe:versions`), or interpreting the resulting metrics (cold/warm launch, TTR, TTI, navigation cold/warm TTR, update download, and the TTI frameRate params for triaging slow startups).",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-observe/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-observe",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-router",
@@ -530,7 +610,9 @@
   "description": "Navigation and routing for Expo Router. Covers file-based routes, groups and dynamic routes, folder organization, Link with previews and context menus, native Stack, page titles, modals and form sheets, NativeTabs, headers and toolbars, and header search bars.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-router/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-router",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-skill-eval",
@@ -543,7 +625,9 @@
   "description": "Evaluate Expo skills in this repo end-to-end - trigger accuracy, generated code quality, and runtime screenshots on iOS simulator and Android emulator via Expo Go (web optional). Use when the user wants to eval an Expo skill, test that a skill produces working code, benchmark a skill with device screenshots, or verify a skill's output renders correctly.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/.claude/skills/expo-skill-eval/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/.claude/skills/expo-skill-eval",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-tailwind-setup",
@@ -556,7 +640,9 @@
   "description": "Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-tailwind-setup/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-tailwind-setup",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "expo-ui",
@@ -569,7 +655,9 @@
   "description": "Build native UI with the @expo/ui package: real SwiftUI on iOS and Jetpack Compose on Android rendered from React in an Expo or React Native app. Covers universal cross-platform components (Host, Column, Row, Button, Text, List, and more imported from @expo/ui), drop-in replacements for popular React Native community libraries (BottomSheet, DateTimePicker, Slider, Menu, etc.), and platform-specific SwiftUI (@expo/ui/swift-ui, iOS only) and Jetpack Compose (@expo/ui/jetpack-compose, Android only) trees and modifiers. Use when adding or reviewing @expo/ui Host/RNHostView trees, building native-feeling UI where standard React Native components fall short (grouped settings forms with toggles, sections, menus, sheets, pickers, sliders), choosing between universal and platform-specific components, or replacing an RN community UI library with a native @expo/ui equivalent. Not for custom native modules, Expo Router navigation, Reanimated, or data fetching.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/expo-ui/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/expo-ui",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "native-data-fetching",
@@ -582,7 +670,9 @@
   "description": "Use when implementing or debugging ANY network request, API call, or data fetching. Covers fetch API, React Query, SWR, error handling, caching, offline support, and Expo Router data loaders (`useLoaderData`).",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/native-data-fetching/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/native-data-fetching",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "upgrading-expo",
@@ -595,7 +685,9 @@
   "description": "Guidelines for upgrading Expo SDK versions and fixing dependency issues",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/upgrading-expo/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/upgrading-expo",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "use-dom",
@@ -608,7 +700,9 @@
   "description": "Use Expo DOM components to run web code in a webview on native and as-is on web. Migrate web code to native incrementally.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/use-dom/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/use-dom",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "web-to-native",
@@ -621,7 +715,9 @@
   "description": "Migrate an existing web React app to a native iOS/Android app with Expo. Use when the user wants to turn a website into a mobile app, port a Next.js/Vite/CRA React codebase to React Native, reuse web code on native incrementally, or asks how web idioms (the DOM, CSS, React Router, localStorage, window) map to native. This is the end-to-end migration guide; use the `use-dom` skill for the DOM-component mechanism itself.",
   "rawUrl": "https://raw.githubusercontent.com/expo/skills/main/plugins/expo/skills/web-to-native/SKILL.md",
   "githubUrl": "https://github.com/expo/skills/tree/main/plugins/expo/skills/web-to-native",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/expo"
  },
  {
   "slug": "hf-cli",
@@ -634,7 +730,9 @@
   "description": "Hugging Face Hub CLI (`hf`) for downloading, uploading, and managing models, datasets, spaces, buckets, repos, papers, jobs, and more on the Hugging Face Hub. Use when: handling authentication; managing local cache; managing Hugging Face Buckets; running or scheduling jobs on Hugging Face infrastructure; managing Hugging Face repos; discussions and pull requests; browsing models, datasets and spaces; reading, searching, or browsing academic papers; managing collections; querying datasets; configuring spaces; setting up webhooks; or deploying and managing HF Inference Endpoints. Make sure to use this skill whenever the user mentions 'hf', 'huggingface', 'Hugging Face', 'huggingface-cli', or 'hugging face cli', or wants to do anything related to the Hugging Face ecosystem and to AI and ML in general. Also use for cloud storage needs like training checkpoints, data pipelines, or agent traces. Use even if the user doesn't explicitly ask for a CLI command. Replaces the deprecated `huggingface-cli`.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hf-cli/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/hf-cli",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "hf-mem",
@@ -647,7 +745,9 @@
   "description": "Hugging Face CLI to estimate the required memory to load Safetensors or GGUF model weights for inference from the Hugging Face Hub",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hf-mem/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/hf-mem",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-best",
@@ -660,7 +760,9 @@
   "description": "Use when the user asks about finding the best, top, or recommended model for a task, wants to know what AI model to use, or wants to compare models by benchmark scores. Triggers on: \"best model for X\", \"what model should I use for\", \"top models for [task]\", \"which model runs on my laptop/machine/device\", \"recommend a model for\", \"what LLM should I use for\", \"compare models for\", \"what's state of the art for\", or any question about choosing an AI model for a specific use case. Always use this skill when the user wants model recommendations or comparisons, even if they don't explicitly mention HuggingFace or benchmarks.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-best/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-best",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-community-evals",
@@ -673,7 +775,9 @@
   "description": "Run evaluations for Hugging Face Hub models using inspect-ai and lighteval on local hardware. Use for backend selection, local GPU evals, and choosing between vLLM / Transformers / accelerate. Not for HF Jobs orchestration, model-card PRs, .eval_results publication, or community-evals automation.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-community-evals/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-community-evals",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-datasets",
@@ -686,7 +790,9 @@
   "description": "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-datasets/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-datasets",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-gradio",
@@ -699,7 +805,9 @@
   "description": "Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-gradio/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-gradio",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-llm-trainer",
@@ -712,7 +820,9 @@
   "description": "Train or fine-tune language and vision models using TRL (Transformer Reinforcement Learning) or Unsloth with Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validation, hardware selection, cost estimation, Trackio monitoring, Hub authentication, model selection/leaderboards and model persistence. Use for tasks involving cloud GPU training, GGUF conversion, or when users mention training on Hugging Face Jobs without local GPU setup.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-llm-trainer/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-llm-trainer",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-local-models",
@@ -725,7 +835,9 @@
   "description": "Use to select models to run locally with llama.cpp and GGUF on CPU, Mac Metal, CUDA, or ROCm. Covers finding GGUFs, quant selection, running servers, exact GGUF file lookup, conversion, and OpenAI-compatible local serving.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-local-models/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-local-models",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-lora-space-builder",
@@ -738,7 +850,9 @@
   "description": "Build and publish a Gradio demo on Hugging Face Spaces for a user-provided LoRA. Use when someone asks to create, generate, ship, or publish a Space, demo, Gradio app, or playground for a LoRA — including LoRAs for Qwen-Image, Qwen-Image-Edit, LTX-Video, Wan, FLUX, SDXL, or other diffusion base models. Also triggers when someone describes a LoRA they trained or hosts on the Hub and wants to share it. Covers picking the right base pipeline and `diffusers` inference recipe, designing a UI tailored to the LoRA's task and inputs (Union/multi-task control, edit, video, image, etc.), respecting model-card recommendations (trigger words, steps, guidance, LoRA scale, example inputs), and shipping to ZeroGPU hardware as a private Space by default.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-lora-space-builder/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-lora-space-builder",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-paper-publisher",
@@ -751,7 +865,9 @@
   "description": "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-paper-publisher/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-paper-publisher",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-papers",
@@ -764,7 +880,9 @@
   "description": "Look up and read Hugging Face paper pages in markdown, and use the papers API for structured metadata such as authors, linked models/datasets/spaces, Github repo and project page. Use when the user shares a Hugging Face paper page URL, an arXiv URL or ID, or asks to summarize, explain, or analyze an AI research paper.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-papers/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-papers",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-spaces",
@@ -777,7 +895,9 @@
   "description": "Build, deploy, and maintain applications on Hugging Face Spaces — Gradio / Docker / Static SDKs, ZeroGPU and dedicated hardware, model loading, debugging, buckets, inference providers, community grants. Use whenever the user asks to create or host an app on Hugging Face, port code onto ZeroGPU, fix a Space that won't build or run, or otherwise work with `hf spaces …`, `@spaces.GPU`, Space README frontmatter, or the `spaces` Python package.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-spaces/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-spaces",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-tool-builder",
@@ -790,7 +910,9 @@
   "description": "Use this skill when the user wants to build tool/scripts or achieve a task where using data from the Hugging Face API would help. This is especially useful when chaining or combining API calls or the task will be repeated/automated. This Skill creates a reusable script to fetch, enrich or process data.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-tool-builder/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-tool-builder",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-trackio",
@@ -803,7 +925,9 @@
   "description": "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API), firing alerts for training diagnostics, or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, alerts with webhooks, HF Space syncing, and JSON output for automation.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-trackio/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-trackio",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-vision-trainer",
@@ -816,7 +940,9 @@
   "description": "Trains and fine-tunes vision models for object detection (D-FINE, RT-DETR v2, DETR, YOLOS), image classification (timm models — MobileNetV3, MobileViT, ResNet, ViT/DINOv3 — plus any Transformers classifier), and SAM/SAM2 segmentation using Hugging Face Transformers on Hugging Face Jobs cloud GPUs. Covers COCO-format dataset preparation, Albumentations augmentation, mAP/mAR evaluation, accuracy metrics, SAM segmentation with bbox/point prompts, DiceCE loss, hardware selection, cost estimation, Trackio monitoring, and Hub persistence. Use when users mention training object detection, image classification, SAM, SAM2, segmentation, image matting, DETR, D-FINE, RT-DETR, ViT, timm, MobileNet, ResNet, bounding box models, or fine-tuning vision models on Hugging Face Jobs.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-vision-trainer/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-vision-trainer",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "huggingface-zerogpu",
@@ -829,7 +955,9 @@
   "description": "AI demos and GPU compute with Gradio Spaces and Hugging Face Spaces ZeroGPU. Use when writing or reviewing code that uses `@spaces.GPU`, configuring `python_version` or `requirements.txt` for a ZeroGPU Space, or handling ZeroGPU-specific code constraints — pickle-based process isolation, `gr.State` semantics across the worker boundary, no `torch.compile` (use AoTI instead), CUDA wheel-only builds (no `nvcc` at build or runtime), large vs xlarge sizing, and dynamic duration callables. Make sure to use this skill whenever the user mentions ZeroGPU, `@spaces.GPU`, or the `spaces` Python package, or hits ZeroGPU-specific code errors like `PicklingError` across the worker boundary, `illegal duration`, or `flash-attn` wheel-build failures — even when the user does not explicitly ask for ZeroGPU coding guidance. Trigger on `import spaces` or `@spaces.GPU` in code.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-zerogpu/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/huggingface-zerogpu",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "train-sentence-transformers",
@@ -842,7 +970,9 @@
   "description": "Train or fine-tune sentence-transformers models across `SentenceTransformer` (bi-encoder; dense or static embedding model; for retrieval, similarity, clustering, classification, paraphrase mining, dedup, multimodal), `CrossEncoder` (reranker; pair scoring for two-stage retrieval / pair classification), and `SparseEncoder` (SPLADE, sparse embedding model; for learned-sparse retrieval). Covers loss selection, hard-negative mining, evaluators, distillation, LoRA, Matryoshka, and Hugging Face Hub publishing. Use for any sentence-transformers training task.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/train-sentence-transformers/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/train-sentence-transformers",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "transformers-js",
@@ -855,7 +985,9 @@
   "description": "Use Transformers.js to run state-of-the-art machine learning models directly in JavaScript/TypeScript. Supports NLP (text classification, translation, summarization), computer vision (image classification, object detection), audio (speech recognition, audio classification), and multimodal tasks. Works in browsers and server-side runtimes (Node.js, Bun, Deno) with WebGPU/WASM using pre-trained models from Hugging Face Hub.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/transformers-js/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/transformers-js",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "trl-training",
@@ -868,7 +1000,9 @@
   "description": "Train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model training via CLI commands.",
   "rawUrl": "https://raw.githubusercontent.com/huggingface/skills/main/skills/trl-training/SKILL.md",
   "githubUrl": "https://github.com/huggingface/skills/tree/main/skills/trl-training",
-  "indexable": true
+  "indexable": true,
+  "license": "Apache-2.0",
+  "authorGithub": "https://github.com/huggingface"
  },
  {
   "slug": "humanizer",
@@ -881,7 +1015,9 @@
   "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases.",
   "rawUrl": "https://raw.githubusercontent.com/blader/humanizer/main/SKILL.md",
   "githubUrl": "https://github.com/blader/humanizer/tree/main/SKILL.md",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/blader"
  },
  {
   "slug": "angular-architect",
@@ -894,7 +1030,9 @@
   "description": "Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, applies RxJS patterns, and optimizes bundle performance. Use when building Angular 17+ applications with standalone components or signals, setting up NgRx stores, establishing RxJS reactive patterns, performance tuning, or writing Angular tests for enterprise apps.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/angular-architect/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/angular-architect",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "api-designer",
@@ -907,7 +1045,9 @@
   "description": "Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pagination patterns, error handling standards.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/api-designer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/api-designer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "architecture-designer",
@@ -920,7 +1060,9 @@
   "description": "Use when designing new high-level system architecture, reviewing existing designs, or making architectural decisions. Invoke to create architecture diagrams, write Architecture Decision Records (ADRs), evaluate technology trade-offs, design component interactions, and plan for scalability. Use for system design, architecture review, microservices structuring, ADR authoring, scalability planning, and infrastructure pattern selection — distinct from code-level design patterns or database-only design tasks.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/architecture-designer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/architecture-designer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "atlassian-mcp",
@@ -933,7 +1075,9 @@
   "description": "Integrates with Atlassian products to manage project tracking and documentation via MCP protocol. Use when querying Jira issues with JQL filters, creating and updating tickets with custom fields, searching or editing Confluence pages with CQL, managing sprints and backlogs, setting up MCP server authentication, syncing documentation, or debugging Atlassian API integrations.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/atlassian-mcp/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/atlassian-mcp",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "chaos-engineer",
@@ -946,7 +1090,9 @@
   "description": "Designs chaos experiments, creates failure injection frameworks, and facilitates game day exercises for distributed systems — producing runbooks, experiment manifests, rollback procedures, and post-mortem templates. Use when designing chaos experiments, implementing failure injection frameworks, or conducting game day exercises. Invoke for chaos experiments, resilience testing, blast radius control, game days, antifragile systems, fault injection, Chaos Monkey, Litmus Chaos.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/chaos-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/chaos-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "cli-developer",
@@ -959,7 +1105,9 @@
   "description": "Use when building CLI tools, implementing argument parsing, or adding interactive prompts. Invoke for parsing flags and subcommands, displaying progress bars and spinners, generating bash/zsh/fish completion scripts, CLI design, shell completions, and cross-platform terminal applications using commander, click, typer, or cobra.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/cli-developer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/cli-developer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "cloud-architect",
@@ -972,7 +1120,9 @@
   "description": "Designs cloud architectures, creates migration plans, generates cost optimization recommendations, and produces disaster recovery strategies across AWS, Azure, and GCP. Use when designing cloud architectures, planning migrations, or optimizing multi-cloud deployments. Invoke for Well-Architected Framework, cost optimization, disaster recovery, landing zones, security architecture, serverless design.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/cloud-architect/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/cloud-architect",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "code-documenter",
@@ -985,7 +1135,9 @@
   "description": "Generates, formats, and validates technical documentation — including docstrings, OpenAPI/Swagger specs, JSDoc annotations, doc portals, and user guides. Use when adding docstrings to functions or classes, creating API documentation, building documentation sites, or writing tutorials and user guides. Invoke for OpenAPI/Swagger specs, JSDoc, doc portals, getting started guides.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/code-documenter/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/code-documenter",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "code-reviewer",
@@ -998,7 +1150,9 @@
   "description": "Analyzes code diffs and files to identify bugs, security vulnerabilities (SQL injection, XSS, insecure deserialization), code smells, N+1 queries, naming issues, and architectural concerns, then produces a structured review report with prioritized, actionable feedback. Use when reviewing pull requests, conducting code quality audits, identifying refactoring opportunities, or checking for security issues. Invoke for PR reviews, code quality checks, refactoring suggestions, review code, code quality. Complements specialized skills (security-reviewer, test-master) by providing broad-scope review across correctness, performance, maintainability, and test coverage in a single pass.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/code-reviewer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/code-reviewer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "cpp-pro",
@@ -1011,7 +1165,9 @@
   "description": "Writes, optimizes, and debugs C++ applications using modern C++20/23 features, template metaprogramming, and high-performance systems techniques. Use when building or refactoring C++ code requiring concepts, ranges, coroutines, SIMD optimization, or careful memory management — or when addressing performance bottlenecks, concurrency issues, and build system configuration with CMake.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/cpp-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/cpp-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "csharp-developer",
@@ -1024,7 +1180,9 @@
   "description": "Use when building C# applications with .NET 8+, ASP.NET Core APIs, or Blazor web apps. Builds REST APIs using minimal or controller-based routing, configures database access with Entity Framework Core, implements async patterns and cancellation, structures applications with CQRS via MediatR, and scaffolds Blazor components with state management. Invoke for C#, .NET, ASP.NET Core, Blazor, Entity Framework, EF Core, Minimal API, MAUI, SignalR.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/csharp-developer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/csharp-developer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "database-optimizer",
@@ -1037,7 +1195,9 @@
   "description": "Optimizes database queries and improves performance across PostgreSQL and MySQL systems. Use when investigating slow queries, analyzing execution plans, or optimizing database performance. Invoke for index design, query rewrites, configuration tuning, partitioning strategies, lock contention resolution.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/database-optimizer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/database-optimizer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "debugging-wizard",
@@ -1050,7 +1210,9 @@
   "description": "Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and applies systematic hypothesis-driven methodology to isolate and resolve bugs. Use when investigating errors, analyzing stack traces, finding root causes of unexpected behavior, troubleshooting crashes, or performing log analysis, error investigation, or root cause analysis.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/debugging-wizard/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/debugging-wizard",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "devops-engineer",
@@ -1063,7 +1225,9 @@
   "description": "Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. Handles deployment automation, GitOps configuration, incident response runbooks, and internal developer platform tooling. Use when setting up CI/CD pipelines, containerizing applications, managing infrastructure as code, deploying to Kubernetes clusters, configuring cloud platforms, automating releases, or responding to production incidents. Invoke for pipelines, Docker, Kubernetes, GitOps, Terraform, GitHub Actions, on-call, or platform engineering.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/devops-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/devops-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "django-expert",
@@ -1076,7 +1240,9 @@
   "description": "Use when building Django web applications or REST APIs with Django REST Framework. Invoke when working with settings.py, models.py, manage.py, or any Django project file. Creates Django models with proper indexes, optimizes ORM queries using select_related/prefetch_related, builds DRF serializers and viewsets, and configures JWT authentication. Trigger terms: Django, DRF, Django REST Framework, Django ORM, Django model, serializer, viewset, Python web.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/django-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/django-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "dotnet-core-expert",
@@ -1089,7 +1255,9 @@
   "description": "Use when building .NET 8 applications with minimal APIs, clean architecture, or cloud-native microservices. Invoke for Entity Framework Core, CQRS with MediatR, JWT authentication, AOT compilation.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/dotnet-core-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/dotnet-core-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "embedded-systems",
@@ -1102,7 +1270,9 @@
   "description": "Use when developing firmware for microcontrollers, implementing RTOS applications, or optimizing power consumption. Invoke for STM32, ESP32, FreeRTOS, bare-metal, power optimization, real-time systems, configure peripherals, write interrupt handlers, implement DMA transfers, debug timing issues.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/embedded-systems/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/embedded-systems",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "fastapi-expert",
@@ -1115,7 +1285,9 @@
   "description": "Use when building high-performance async Python APIs with FastAPI and Pydantic V2. Invoke to create REST endpoints, define Pydantic models, implement authentication flows, set up async SQLAlchemy database operations, add JWT authentication, build WebSocket endpoints, or generate OpenAPI documentation. Trigger terms: FastAPI, Pydantic, async Python, Python API, REST API Python, SQLAlchemy async, JWT authentication, OpenAPI, Swagger Python.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/fastapi-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/fastapi-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "feature-forge",
@@ -1128,7 +1300,9 @@
   "description": "Conducts structured requirements workshops to produce feature specifications, user stories, EARS-format functional requirements, acceptance criteria, and implementation checklists. Use when defining new features, gathering requirements, or writing specifications. Invoke for feature definition, requirements gathering, user stories, EARS format specs, PRDs, acceptance criteria, or requirement matrices.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/feature-forge/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/feature-forge",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "fine-tuning-expert",
@@ -1141,7 +1315,9 @@
   "description": "Use when fine-tuning LLMs, training custom models, or adapting foundation models for specific tasks. Invoke for configuring LoRA/QLoRA adapters, preparing JSONL training datasets, setting hyperparameters for fine-tuning runs, adapter training, transfer learning, finetuning with Hugging Face PEFT, OpenAI fine-tuning, instruction tuning, RLHF, DPO, or quantizing and deploying fine-tuned models. Trigger terms include: LoRA, QLoRA, PEFT, finetuning, fine-tuning, adapter tuning, LLM training, model training, custom model.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/fine-tuning-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/fine-tuning-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "flutter-expert",
@@ -1154,7 +1330,9 @@
   "description": "Use when building cross-platform applications with Flutter 3+ and Dart. Invoke for widget development, Riverpod/Bloc state management, GoRouter navigation, platform-specific implementations, performance optimization.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/flutter-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/flutter-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "fullstack-guardian",
@@ -1167,7 +1345,9 @@
   "description": "Builds security-focused full-stack web applications by implementing integrated frontend and backend components with layered security at every level. Covers the complete stack from database to UI, enforcing auth, input validation, output encoding, and parameterized queries across all layers. Use when implementing features across frontend and backend, building REST APIs with corresponding UI, connecting frontend components to backend endpoints, creating end-to-end data flows from database to UI, or implementing CRUD operations with UI forms. Distinct from frontend-only, backend-only, or API-only skills in that it simultaneously addresses all three perspectives—Frontend, Backend, and Security—within a single implementation workflow. Invoke for full-stack feature work, web app development, authenticated API routes with views, microservices, real-time features, monorepo architecture, or technology selection decisions.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/fullstack-guardian/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/fullstack-guardian",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "game-developer",
@@ -1180,7 +1360,9 @@
   "description": "Use when building game systems, implementing Unity/Unreal Engine features, or optimizing game performance. Invoke to implement ECS architecture, configure physics systems and colliders, set up multiplayer networking with lag compensation, optimize frame rates to 60+ FPS targets, develop shaders, or apply game design patterns such as object pooling and state machines. Trigger keywords: Unity, Unreal Engine, game development, ECS architecture, game physics, multiplayer networking, game optimization, shader programming, game AI.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/game-developer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/game-developer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "golang-pro",
@@ -1193,7 +1375,9 @@
   "description": "Implements concurrent Go patterns using goroutines and channels, designs and builds microservices with gRPC or REST, optimizes Go application performance with pprof, and enforces idiomatic Go with generics, interfaces, and robust error handling. Use when building Go applications requiring concurrent programming, microservices architecture, or high-performance systems. Invoke for goroutines, channels, Go generics, gRPC integration, CLI tools, benchmarks, or table-driven testing.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/golang-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/golang-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "graphql-architect",
@@ -1206,7 +1390,9 @@
   "description": "Use when designing GraphQL schemas, implementing Apollo Federation, or building real-time subscriptions. Invoke for schema design, resolvers with DataLoader, query optimization, federation directives.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/graphql-architect/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/graphql-architect",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "java-architect",
@@ -1219,7 +1405,9 @@
   "description": "Use when building, configuring, or debugging enterprise Java applications with Spring Boot 3.x, microservices, or reactive programming. Invoke to implement WebFlux endpoints, optimize JPA queries and database performance, configure Spring Security with OAuth2/JWT, or resolve authentication issues and async processing challenges in cloud-native Spring applications.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/java-architect/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/java-architect",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "javascript-pro",
@@ -1232,7 +1420,9 @@
   "description": "Writes, debugs, and refactors JavaScript code using modern ES2023+ features, async/await patterns, ESM module systems, and Node.js APIs. Use when building vanilla JavaScript applications, implementing Promise-based async flows, optimising browser or Node.js performance, working with Web Workers or Fetch API, or reviewing .js/.mjs/.cjs files for correctness and best practices.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/javascript-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/javascript-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "kotlin-specialist",
@@ -1245,7 +1435,9 @@
   "description": "Provides idiomatic Kotlin implementation patterns including coroutine concurrency, Flow stream handling, multiplatform architecture, Compose UI construction, Ktor server setup, and type-safe DSL design. Use when building Kotlin applications requiring coroutines, multiplatform development, or Android with Compose. Invoke for Flow API, KMP projects, Ktor servers, DSL design, sealed classes, suspend function, Android Kotlin, Kotlin Multiplatform.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/kotlin-specialist/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/kotlin-specialist",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "kubernetes-specialist",
@@ -1258,7 +1450,9 @@
   "description": "Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests, configure pod security policies, set up service accounts, define network isolation rules, debug pod crashes, analyze resource limits, inspect container logs, or right-size workloads. Use for Helm charts, RBAC policies, NetworkPolicies, storage configuration, performance optimization, GitOps pipelines, and multi-cluster management.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/kubernetes-specialist/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/kubernetes-specialist",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "laravel-specialist",
@@ -1271,7 +1465,9 @@
   "description": "Build and configure Laravel 10+ applications, including creating Eloquent models and relationships, implementing Sanctum authentication, configuring Horizon queues, designing RESTful APIs with API resources, and building reactive interfaces with Livewire. Use when creating Laravel models, setting up queue workers, implementing Sanctum auth flows, building Livewire components, optimising Eloquent queries, or writing Pest/PHPUnit tests for Laravel features.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/laravel-specialist/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/laravel-specialist",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "legacy-modernizer",
@@ -1284,7 +1480,9 @@
   "description": "Designs incremental migration strategies, identifies service boundaries, produces dependency maps and migration roadmaps, and generates API facade designs for aging codebases. Use when modernizing legacy systems, implementing strangler fig pattern or branch by abstraction, decomposing monoliths, upgrading frameworks or languages, or reducing technical debt without disrupting business operations.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/legacy-modernizer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/legacy-modernizer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "mcp-developer",
@@ -1297,7 +1495,9 @@
   "description": "Use when building, debugging, or extending MCP servers or clients that connect AI systems with external tools and data sources. Invoke to implement tool handlers, configure resource providers, set up stdio/HTTP/SSE transport layers, validate schemas with Zod or Pydantic, debug protocol compliance issues, or scaffold complete MCP server/client projects using TypeScript or Python SDKs.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/mcp-developer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/mcp-developer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "microservices-architect",
@@ -1310,7 +1510,9 @@
   "description": "Designs distributed system architectures, decomposes monoliths into bounded-context services, recommends communication patterns, and produces service boundary diagrams and resilience strategies. Use when designing distributed systems, decomposing monoliths, or implementing microservices patterns — including service boundaries, DDD, saga patterns, event sourcing, CQRS, service mesh, or distributed tracing.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/microservices-architect/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/microservices-architect",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "ml-pipeline",
@@ -1323,7 +1525,9 @@
   "description": "Designs and implements production-grade ML pipeline infrastructure: configures experiment tracking with MLflow or Weights & Biases, creates Kubeflow or Airflow DAGs for training orchestration, builds feature store schemas with Feast, deploys model registries, and automates retraining and validation workflows. Use when building ML pipelines, orchestrating training workflows, automating model lifecycle, implementing feature stores, managing experiment tracking systems, setting up DVC for data versioning, tuning hyperparameters, or configuring MLOps tooling like Kubeflow, Airflow, MLflow, or Prefect.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/ml-pipeline/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/ml-pipeline",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "monitoring-expert",
@@ -1336,7 +1540,9 @@
   "description": "Configures monitoring systems, implements structured logging pipelines, creates Prometheus/Grafana dashboards, defines alerting rules, and instruments distributed tracing. Implements Prometheus/Grafana stacks, conducts load testing, performs application profiling, and plans infrastructure capacity. Use when setting up application monitoring, adding observability to services, debugging production issues with logs/metrics/traces, running load tests with k6 or Artillery, profiling CPU/memory bottlenecks, or forecasting capacity needs.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/monitoring-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/monitoring-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "nestjs-expert",
@@ -1349,7 +1555,9 @@
   "description": "Creates and configures NestJS modules, controllers, services, DTOs, guards, and interceptors for enterprise-grade TypeScript backend applications. Use when building NestJS REST APIs or GraphQL services, implementing dependency injection, scaffolding modular architecture, adding JWT/Passport authentication, integrating TypeORM or Prisma, or working with .module.ts, .controller.ts, and .service.ts files. Invoke for guards, interceptors, pipes, validation, Swagger documentation, and unit/E2E testing in NestJS projects.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/nestjs-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/nestjs-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "nextjs-developer",
@@ -1362,7 +1570,9 @@
   "description": "Use when building Next.js 14+ applications with App Router, server components, or server actions. Invoke to configure route handlers, implement middleware, set up API routes, add streaming SSR, write generateMetadata for SEO, scaffold loading.tsx/error.tsx boundaries, or deploy to Vercel. Triggers on: Next.js, Next.js 14, App Router, RSC, use server, Server Components, Server Actions, React Server Components, generateMetadata, loading.tsx, Next.js deployment, Vercel, Next.js performance.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/nextjs-developer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/nextjs-developer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "pandas-pro",
@@ -1375,7 +1585,9 @@
   "description": "Performs pandas DataFrame operations for data analysis, manipulation, and transformation. Use when working with pandas DataFrames, data cleaning, aggregation, merging, or time series analysis. Invoke for data manipulation tasks such as joining DataFrames on multiple keys, pivoting tables, resampling time series, handling NaN values with interpolation or forward-fill, groupby aggregations, type conversion, or performance optimization of large datasets.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/pandas-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/pandas-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "php-pro",
@@ -1388,7 +1600,9 @@
   "description": "Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony frameworks. Invokes strict typing, PHPStan level 9, async patterns with Swoole, and PSR standards. Creates controllers, configures middleware, generates migrations, writes PHPUnit/Pest tests, defines typed DTOs and value objects, sets up dependency injection, and scaffolds REST/GraphQL APIs. Use when working with Eloquent, Doctrine, Composer, Psalm, ReactPHP, or any PHP API development.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/php-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "playwright-expert",
@@ -1401,7 +1615,9 @@
   "description": "Use when writing E2E tests with Playwright, setting up test infrastructure, or debugging flaky browser tests. Invoke to write test scripts, create page objects, configure test fixtures, set up reporters, add CI integration, implement API mocking, or perform visual regression testing. Trigger terms: Playwright, E2E test, end-to-end, browser testing, automation, UI testing, visual testing, Page Object Model, test flakiness.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/playwright-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/playwright-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "postgres-pro",
@@ -1414,7 +1630,9 @@
   "description": "Use when optimizing PostgreSQL queries, configuring replication, or implementing advanced database features. Invoke for EXPLAIN analysis, JSONB operations, extension usage, VACUUM tuning, performance monitoring.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/postgres-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/postgres-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "prompt-engineer",
@@ -1427,7 +1645,9 @@
   "description": "Writes, refactors, and evaluates prompts for LLMs — generating optimized prompt templates, structured output schemas, evaluation rubrics, and test suites. Use when designing prompts for new LLM applications, refactoring existing prompts for better accuracy or token efficiency, implementing chain-of-thought or few-shot learning, creating system prompts with personas and guardrails, building JSON/function-calling schemas, or developing prompt evaluation frameworks to measure and improve model performance.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/prompt-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/prompt-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "python-pro",
@@ -1440,7 +1660,9 @@
   "description": "Use when building Python 3.11+ applications requiring type safety, async programming, or robust error handling. Generates type-annotated Python code, configures mypy in strict mode, writes pytest test suites with fixtures and mocking, and validates code with black and ruff. Invoke for type hints, async/await patterns, dataclasses, dependency injection, logging configuration, and structured error handling.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/python-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/python-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "rag-architect",
@@ -1453,7 +1675,9 @@
   "description": "Designs and implements production-grade RAG systems by chunking documents, generating embeddings, configuring vector stores, building hybrid search pipelines, applying reranking, and evaluating retrieval quality. Use when building RAG systems, vector databases, or knowledge-grounded AI applications requiring semantic search, document retrieval, context augmentation, similarity search, or embedding-based indexing.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/rag-architect/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/rag-architect",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "rails-expert",
@@ -1466,7 +1690,9 @@
   "description": "Rails 7+ specialist that optimizes Active Record queries with includes/eager_load, implements Turbo Frames and Turbo Streams for partial page updates, configures Action Cable for WebSocket connections, sets up Sidekiq workers for background job processing, and writes comprehensive RSpec test suites. Use when building Rails 7+ web applications with Hotwire, real-time features, or background job processing. Invoke for Active Record optimization, Turbo Frames/Streams, Action Cable, Sidekiq, RSpec Rails.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/rails-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/rails-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "react-expert",
@@ -1479,7 +1705,9 @@
   "description": "Use when building React 18+ applications in .jsx or .tsx files, Next.js App Router projects, or create-react-app setups. Creates components, implements custom hooks, debugs rendering issues, migrates class components to functional, and implements state management. Invoke for Server Components, Suspense boundaries, useActionState forms, performance optimization, or React 19 features.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/react-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/react-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "react-native-expert",
@@ -1492,7 +1720,9 @@
   "description": "Builds, optimizes, and debugs cross-platform mobile applications with React Native and Expo. Implements navigation hierarchies (tabs, stacks, drawers), configures native modules, optimizes FlatList rendering with memo and useCallback, and handles platform-specific code for iOS and Android. Use when building a React Native or Expo mobile app, setting up navigation, integrating native modules, improving scroll performance, handling SafeArea or keyboard input, or configuring Expo SDK projects.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/react-native-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/react-native-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "rust-engineer",
@@ -1505,7 +1735,9 @@
   "description": "Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions. Implements ownership patterns, manages lifetimes, designs trait hierarchies, builds async applications with tokio, and structures error handling with Result/Option. Use when building Rust applications, solving ownership or borrowing issues, designing trait-based APIs, implementing async/await concurrency, creating FFI bindings, or optimizing for performance and memory safety. Invoke for Rust, Cargo, ownership, borrowing, lifetimes, async Rust, tokio, zero-cost abstractions, memory safety, systems programming.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/rust-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/rust-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "salesforce-developer",
@@ -1518,7 +1750,9 @@
   "description": "Writes and debugs Apex code, builds Lightning Web Components, optimizes SOQL queries, implements triggers, batch jobs, platform events, and integrations on the Salesforce platform. Use when developing Salesforce applications, customizing CRM workflows, managing governor limits, bulk processing, or setting up Salesforce DX and CI/CD pipelines.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/salesforce-developer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/salesforce-developer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "secure-code-guardian",
@@ -1531,7 +1765,9 @@
   "description": "Use when implementing authentication/authorization, securing user input, or preventing OWASP Top 10 vulnerabilities — including custom security implementations such as hashing passwords with bcrypt/argon2, sanitizing SQL queries with parameterized statements, configuring CORS/CSP headers, validating input with Zod, and setting up JWT tokens. Invoke for authentication, authorization, input validation, encryption, OWASP Top 10 prevention, secure session management, and security hardening. For pre-built OAuth/SSO integrations or standalone security audits, consider a more specialized skill.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/secure-code-guardian/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/secure-code-guardian",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "security-reviewer",
@@ -1544,7 +1780,9 @@
   "description": "Identifies security vulnerabilities, generates structured audit reports with severity ratings, and provides actionable remediation guidance. Use when conducting security audits, reviewing code for vulnerabilities, or analyzing infrastructure security. Invoke for SAST scans, penetration testing, DevSecOps practices, cloud security reviews, dependency audits, secrets scanning, or compliance checks. Produces vulnerability reports, prioritized recommendations, and compliance checklists.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/security-reviewer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/security-reviewer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "shopify-expert",
@@ -1557,7 +1795,9 @@
   "description": "Builds and debugs Shopify themes (.liquid files, theme.json, sections), develops custom Shopify apps (shopify.app.toml, OAuth, webhooks), and implements Storefront API integrations for headless storefronts. Use when building or customizing Shopify themes, creating Hydrogen or custom React storefronts, developing Shopify apps, implementing checkout UI extensions or Shopify Functions, optimizing performance, or integrating third-party services. Invoke for Liquid templating, Storefront API, app development, checkout customization, Shopify Plus features, App Bridge, Polaris, or Shopify CLI workflows.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/shopify-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/shopify-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "spark-engineer",
@@ -1570,7 +1810,9 @@
   "description": "Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed data processing pipelines, or big data workloads. Invoke to write DataFrame transformations, optimize Spark SQL queries, implement RDD pipelines, tune shuffle operations, configure executor memory, process .parquet files, handle data partitioning, or build structured streaming analytics.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/spark-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/spark-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "spec-miner",
@@ -1583,7 +1825,9 @@
   "description": "Reverse-engineering specialist that extracts specifications from existing codebases. Use when working with legacy or undocumented systems, inherited projects, or old codebases with no documentation. Invoke to map code dependencies, generate API documentation from source, identify undocumented business logic, figure out what code does, or create architecture documentation from implementation. Trigger phrases: reverse engineer, old codebase, no docs, no documentation, figure out how this works, inherited project, legacy analysis, code archaeology, undocumented features.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/spec-miner/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/spec-miner",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "spring-boot-engineer",
@@ -1596,7 +1840,9 @@
   "description": "Generates Spring Boot 3.x configurations, creates REST controllers, implements Spring Security 6 authentication flows, sets up Spring Data JPA repositories, and configures reactive WebFlux endpoints. Use when building Spring Boot 3.x applications, microservices, or reactive Java applications; invoke for Spring Data JPA, Spring Security 6, WebFlux, Spring Cloud integration, Java REST API design, or Microservices Java architecture.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/spring-boot-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/spring-boot-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "sql-pro",
@@ -1609,7 +1855,9 @@
   "description": "Optimizes SQL queries, designs database schemas, and troubleshoots performance issues. Use when a user asks why their query is slow, needs help writing complex joins or aggregations, mentions database performance issues, or wants to design or migrate a schema. Invoke for complex queries, window functions, CTEs, indexing strategies, query plan analysis, covering index creation, recursive queries, EXPLAIN/ANALYZE interpretation, before/after query benchmarking, or migrating queries between database dialects (PostgreSQL, MySQL, SQL Server, Oracle).",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/sql-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/sql-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "sre-engineer",
@@ -1622,7 +1870,9 @@
   "description": "Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and produces monitoring configurations and automation scripts for production systems. Use when defining SLIs/SLOs, managing error budgets, building reliable systems at scale, incident management, chaos engineering, toil reduction, or capacity planning.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/sre-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/sre-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "swift-expert",
@@ -1635,7 +1885,9 @@
   "description": "Builds iOS/macOS/watchOS/tvOS applications, implements SwiftUI views and state management, designs protocol-oriented architectures, handles async/await concurrency, implements actors for thread safety, and debugs Swift-specific issues. Use when building iOS/macOS applications with Swift 5.9+, SwiftUI, or async/await concurrency. Invoke for protocol-oriented programming, SwiftUI state management, actors, server-side Swift, UIKit integration, Combine, or Vapor.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/swift-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/swift-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "terraform-engineer",
@@ -1648,7 +1900,9 @@
   "description": "Use when implementing infrastructure as code with Terraform across AWS, Azure, or GCP. Invoke for module development (create reusable modules, manage module versioning), state management (migrate backends, import existing resources, resolve state conflicts), provider configuration, multi-environment workflows, and infrastructure testing.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/terraform-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/terraform-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "test-master",
@@ -1661,7 +1915,9 @@
   "description": "Generates test files, creates mocking strategies, analyzes code coverage, designs test architectures, and produces test plans and defect reports across functional, performance, and security testing disciplines. Use when writing unit tests, integration tests, or E2E tests; creating test strategies or automation frameworks; analyzing coverage gaps; performance testing with k6 or Artillery; security testing with OWASP methods; debugging flaky tests; or working on QA, regression, test automation, quality gates, shift-left testing, or test maintenance.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/test-master/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/test-master",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "the-fool",
@@ -1674,7 +1930,9 @@
   "description": "Use when challenging ideas, plans, decisions, or proposals using structured critical reasoning. Invoke to play devil's advocate, run a pre-mortem, red team, or audit evidence and assumptions.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/the-fool/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/the-fool",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "typescript-pro",
@@ -1687,7 +1945,9 @@
   "description": "Implements advanced TypeScript type systems, creates custom type guards, utility types, and branded types, and configures tRPC for end-to-end type safety. Use when building TypeScript applications requiring advanced generics, conditional or mapped types, discriminated unions, monorepo setup, or full-stack type safety with tRPC.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/typescript-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/typescript-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "vue-expert",
@@ -1700,7 +1960,9 @@
   "description": "Builds Vue 3 components with Composition API patterns, configures Nuxt 3 SSR/SSG projects, sets up Pinia stores, scaffolds Quasar/Capacitor mobile apps, implements PWA features, and optimises Vite builds. Use when creating Vue 3 applications with Composition API, writing reusable composables, managing state with Pinia, building hybrid mobile apps with Quasar or Capacitor, configuring service workers, or tuning Vite configuration and TypeScript integration.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/vue-expert/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "vue-expert-js",
@@ -1713,7 +1975,9 @@
   "description": "Creates Vue 3 components, builds vanilla JS composables, configures Vite projects, and sets up routing and state management using JavaScript only — no TypeScript. Generates JSDoc-typed code with @typedef, @param, and @returns annotations for full type coverage without a TS compiler. Use when building Vue 3 applications with JavaScript only (no TypeScript), when projects require JSDoc-based type hints, when migrating from Vue 2 Options API to Composition API in JS, or when teams prefer vanilla JavaScript, .mjs modules, or need quick prototypes without TypeScript setup.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/vue-expert-js/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert-js",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "websocket-engineer",
@@ -1726,7 +1990,9 @@
   "description": "Use when building real-time communication systems with WebSockets or Socket.IO. Invoke for bidirectional messaging, horizontal scaling with Redis, presence tracking, room management.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/websocket-engineer/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/websocket-engineer",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "wordpress-pro",
@@ -1739,7 +2005,9 @@
   "description": "Develops custom WordPress themes and plugins, creates and registers Gutenberg blocks and block patterns, configures WooCommerce stores, implements WordPress REST API endpoints, applies security hardening (nonces, sanitization, escaping, capability checks), and optimizes performance through caching and query tuning. Use when building WordPress themes, writing plugins, customizing Gutenberg blocks, extending WooCommerce, working with ACF, using the WordPress REST API, applying hooks and filters, or improving WordPress performance and security.",
   "rawUrl": "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/wordpress-pro/SKILL.md",
   "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/wordpress-pro",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/Jeffallan"
  },
  {
   "slug": "ask-matt",
@@ -1752,7 +2020,9 @@
   "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/ask-matt/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/ask-matt",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "claude-handoff",
@@ -1765,7 +2035,9 @@
   "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/claude-handoff/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/claude-handoff",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "code-review",
@@ -1778,7 +2050,9 @@
   "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/code-review/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "codebase-design",
@@ -1791,7 +2065,9 @@
   "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/codebase-design/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "design-an-interface",
@@ -1804,7 +2080,9 @@
   "description": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/deprecated/design-an-interface/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/deprecated/design-an-interface",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "diagnosing-bugs",
@@ -1817,7 +2095,9 @@
   "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/diagnosing-bugs/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/diagnosing-bugs",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "domain-modeling",
@@ -1830,7 +2110,9 @@
   "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/domain-modeling/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "edit-article",
@@ -1843,7 +2125,9 @@
   "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/personal/edit-article/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/personal/edit-article",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "git-guardrails-claude-code",
@@ -1856,7 +2140,9 @@
   "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/misc/git-guardrails-claude-code/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/misc/git-guardrails-claude-code",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "grill-me",
@@ -1869,7 +2155,9 @@
   "description": "A relentless interview to sharpen a plan or design.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grill-me/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "grill-with-docs",
@@ -1882,7 +2170,9 @@
   "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/grill-with-docs/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "grilling",
@@ -1895,7 +2185,9 @@
   "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grilling/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "handoff",
@@ -1908,7 +2200,9 @@
   "description": "Compact the current conversation into a handoff document for another agent to pick up.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/handoff/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "implement",
@@ -1921,7 +2215,9 @@
   "description": "Implement a piece of work based on a PRD or set of issues.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/implement/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/implement",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "improve-codebase-architecture",
@@ -1934,7 +2230,9 @@
   "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/improve-codebase-architecture/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/improve-codebase-architecture",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "loop-me",
@@ -1947,7 +2245,9 @@
   "description": "Grill me about specs for the workflows I want to build, within this workspace.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/loop-me/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/loop-me",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "migrate-to-shoehorn",
@@ -1960,7 +2260,9 @@
   "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/misc/migrate-to-shoehorn/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/misc/migrate-to-shoehorn",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "obsidian-vault",
@@ -1973,7 +2275,9 @@
   "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/personal/obsidian-vault/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/personal/obsidian-vault",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "prototype",
@@ -1986,7 +2290,9 @@
   "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/prototype/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "qa",
@@ -1999,7 +2305,9 @@
   "description": "Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions \"QA session\".",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/deprecated/qa/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/deprecated/qa",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "request-refactor-plan",
@@ -2012,7 +2320,9 @@
   "description": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/deprecated/request-refactor-plan/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/deprecated/request-refactor-plan",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "research",
@@ -2025,7 +2335,9 @@
   "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/research/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/research",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "resolving-merge-conflicts",
@@ -2038,7 +2350,9 @@
   "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/resolving-merge-conflicts/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/resolving-merge-conflicts",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "scaffold-exercises",
@@ -2051,7 +2365,9 @@
   "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/misc/scaffold-exercises/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/misc/scaffold-exercises",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "setup-matt-pocock-skills",
@@ -2064,7 +2380,9 @@
   "description": "Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/setup-matt-pocock-skills/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/setup-matt-pocock-skills",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "setup-pre-commit",
@@ -2077,7 +2395,9 @@
   "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/misc/setup-pre-commit/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/misc/setup-pre-commit",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "tdd",
@@ -2090,7 +2410,9 @@
   "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/tdd/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "teach",
@@ -2103,7 +2425,9 @@
   "description": "Teach the user a new skill or concept, within this workspace.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/teach/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/productivity/teach",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "to-issues",
@@ -2116,7 +2440,9 @@
   "description": "Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/to-issues/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/to-issues",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "to-prd",
@@ -2129,7 +2455,9 @@
   "description": "Turn the current conversation into a PRD and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/to-prd/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/to-prd",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "triage",
@@ -2142,7 +2470,9 @@
   "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/triage/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/triage",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "ubiquitous-language",
@@ -2155,7 +2485,9 @@
   "description": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/deprecated/ubiquitous-language/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/deprecated/ubiquitous-language",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "wayfinder",
@@ -2168,7 +2500,9 @@
   "description": "Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/wayfinder/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/wayfinder",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "wizard",
@@ -2181,7 +2515,9 @@
   "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/wizard/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/wizard",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "writing-beats",
@@ -2194,7 +2530,9 @@
   "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/writing-beats/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/writing-beats",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "writing-fragments",
@@ -2207,7 +2545,9 @@
   "description": "Writing, explore — mine raw fragments, no structure yet.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/writing-fragments/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/writing-fragments",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "writing-great-skills",
@@ -2220,7 +2560,9 @@
   "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/writing-great-skills/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-great-skills",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "writing-shape",
@@ -2233,7 +2575,9 @@
   "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
   "rawUrl": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/in-progress/writing-shape/SKILL.md",
   "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/writing-shape",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/mattpocock"
  },
  {
   "slug": "brainstorming",
@@ -2246,7 +2590,9 @@
   "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "dispatching-parallel-agents",
@@ -2259,7 +2605,9 @@
   "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/dispatching-parallel-agents/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "executing-plans",
@@ -2272,7 +2620,9 @@
   "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/executing-plans/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "finishing-a-development-branch",
@@ -2285,7 +2635,9 @@
   "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/finishing-a-development-branch/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "receiving-code-review",
@@ -2298,7 +2650,9 @@
   "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/receiving-code-review/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "requesting-code-review",
@@ -2311,7 +2665,9 @@
   "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "subagent-driven-development",
@@ -2324,7 +2680,9 @@
   "description": "Use when executing implementation plans with independent tasks in the current session",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/subagent-driven-development/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "systematic-debugging",
@@ -2337,7 +2695,9 @@
   "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "test-driven-development",
@@ -2350,7 +2710,9 @@
   "description": "Use when implementing any feature or bugfix, before writing implementation code",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "using-git-worktrees",
@@ -2363,7 +2725,9 @@
   "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-git-worktrees/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "using-superpowers",
@@ -2376,7 +2740,9 @@
   "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-superpowers/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "verification-before-completion",
@@ -2389,7 +2755,9 @@
   "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "writing-plans",
@@ -2402,7 +2770,9 @@
   "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "writing-skills",
@@ -2415,7 +2785,9 @@
   "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
   "rawUrl": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-skills/SKILL.md",
   "githubUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
-  "indexable": true
+  "indexable": true,
+  "license": "MIT",
+  "authorGithub": "https://github.com/obra"
  },
  {
   "slug": "deploy-to-vercel",
@@ -2428,7 +2800,9 @@
   "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/deploy-to-vercel/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "vercel-cli-with-tokens",
@@ -2441,7 +2815,9 @@
   "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/vercel-cli-with-tokens/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/vercel-cli-with-tokens",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "vercel-composition-patterns",
@@ -2454,7 +2830,9 @@
   "description": "React composition patterns that scale. Use when refactoring components with",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/composition-patterns/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "vercel-optimize",
@@ -2467,7 +2845,9 @@
   "description": "Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps. Collect Vercel metrics, usage, project config, and code scan results first; investigate only metric-backed candidates; produce ranked recommendations grounded in verified files and version-aware Vercel/framework docs. Trigger for Vercel bill reduction, slow or expensive routes, caching opportunities, Function Invocations, Build Minutes, Fast Data Transfer, Core Web Vitals, Bot Management, Fluid compute, or cost breakdown requests.",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/vercel-optimize/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/vercel-optimize",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "vercel-react-best-practices",
@@ -2480,7 +2860,9 @@
   "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "vercel-react-native-skills",
@@ -2493,7 +2875,9 @@
   "description": "React Native and Expo best practices for building performant mobile apps. Use",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-native-skills/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-native-skills",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "vercel-react-view-transitions",
@@ -2506,7 +2890,9 @@
   "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-view-transitions/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-view-transitions",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "web-design-guidelines",
@@ -2519,7 +2905,9 @@
   "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  },
  {
   "slug": "writing-guidelines",
@@ -2532,6 +2920,8 @@
   "description": "Review docs/prose for Writing Guidelines compliance. Use when asked to \"review my docs\", \"check writing style\", \"audit prose\", \"review docs voice and tone\", or \"check this page against the writing handbook\".",
   "rawUrl": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/writing-guidelines/SKILL.md",
   "githubUrl": "https://github.com/vercel-labs/agent-skills/tree/main/skills/writing-guidelines",
-  "indexable": true
+  "indexable": true,
+  "license": "No license specified",
+  "authorGithub": "https://github.com/vercel-labs"
  }
 ]
